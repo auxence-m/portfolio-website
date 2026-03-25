@@ -42,3 +42,7 @@ next-env.d.ts
 
 #idea
 .idea
+
+#next-intl
+en.d.json.ts
+fr.d.json.ts
