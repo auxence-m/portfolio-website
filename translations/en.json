@@ -3,5 +3,35 @@
     "projects": "Projects",
     "contact": "Contact",
     "resume": "View Resume"
+  },
+
+  "Hero": {
+    "role": "Junior Software developer",
+    "headline": {
+      "first": "Learning and Improving",
+      "second": "one project at a time"
+    },
+    "subtext": "Computer Engineering graduate with a foundation in software development, ready to grow and contribute to real-world projects",
+    "cta": {
+      "projects": "My projects",
+      "resume": "My resume"
+    },
+    "scroll": "Scroll"
+  },
+
+  "Footer": {
+    "subtext": "Computer Engineering graduate with a foundation in software development, ready to grow and contribute to real-world projects",
+    "availability": "Available for new projects",
+    "explore": {
+      "title": "Explore",
+      "projects": "Projects",
+      "contact": "Contact",
+      "resume": "Resume"
+    },
+    "location": {
+      "title": "Location",
+      "subtext": "Montreal, Quebec, Canada"
+    },
+    "copyright": "Auxence MEDJA, All rights reserved."
   }
 }

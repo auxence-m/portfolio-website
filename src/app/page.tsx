@@ -1,36 +1,73 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
-  return (
-    <div className="flex flex-col min-h-screen flex-1 items-center justify-center bg-zinc-50 dark:bg-black">
-      <div className="flex gap-y-20 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Check out our documentation
-          </p>
+import ThemeToggle from "@/components/ThemeToggle";
+import {ArrowRight} from "lucide-react";
+import {useRouter} from 'next/navigation';
+
+const languageOptions = [
+    {
+        name: "English",
+        short_name: "EN-CA",
+        label: "DIRECTORY_EN",
+        helper_text: "Enter Portfolio",
+        locale: "en"
+    },
+    {
+        name: "Français",
+        short_name: "FR-CA",
+        label: "DIRECTORY_FR",
+        helper_text: "Accéder au Portfolio",
+        locale: "fr"
+    }
+]
+
+export default function LanguageChoice() {
+    const router = useRouter();
+
+    function chooseLanguage(locale: string) {
+        router.push(`/${locale}`);
+    }
+
+    return (
+        <div className="min-h-screen bg-surface-container-lowest text-on-surface">
+            <main className="flex flex-col min-h-screen justify-center items-center px-6 py-12">
+                <div className="w-full max-w-7xl mx-auto flex justify-end mb-6">
+                    <div className="bg-surface-container text-primary rounded-xl hover:bg-surface-container-high shadow-lg border border-outline-variant/20">
+                        <ThemeToggle size={26}/>
+                    </div>
+                </div>
+                <div className="text-center mb-16 lg:mb-24">
+                    <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl tracking-tighter text-on-surface uppercase text-balance">
+                        Select your preferred language
+                    </h1>
+                </div>
+                <div className="flex flex-col md:flex-row max-w-5xl items-stretch justify-center gap-8 w-full mb-12">
+                    {
+                        languageOptions.map((language) => (
+                            <button key={language.locale} onClick={() => chooseLanguage(language.locale)} className="flex flex-col flex-1 group relative rounded-xl bg-surface-container p-10 lg:p-16 text-left border border-outline-variant hover:border-primary transition-all duration-500 hover:bg-surface-container-high cursor-pointer">
+                                <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-100 transition-opacity">
+                                    <span className="text-primary text-xs tracking-widest">{language.short_name}</span>
+                                </div>
+                                <span className="text-on-surface-variant text-[0.75rem] tracking-widest block mb-2 group-hover:text-primary transition-colors duration-300">
+                                        {language.label}
+                                    </span>
+                                <div className="relative pr-5">
+                                    <h2 className="font-bold text-4xl lg:text-5xl text-on-surface uppercase tracking-tight group-hover:translate-x-2 transition-transform duration-500">
+                                        {language.name}
+                                    </h2>
+                                    <span className="absolute mt-6 w-0 h-px bg-primary group-hover:w-full transition-all duration-500"></span>
+                                </div>
+                                <div className="mt-12 opacity-60 group-hover:opacity-100 transition-opacity duration-500 flex items-center gap-3">
+                                        <span className="text-sm text-on-surface-variant italic">
+                                            {language.helper_text}
+                                        </span>
+                                    <ArrowRight strokeWidth={1.5} size={16} className="text-primary"/>
+                                </div>
+                            </button>
+                        ))
+                    }
+                </div>
+            </main>
         </div>
-        <div className="text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid text-black dark:text-zinc-50 border-black/8 px-5 transition-colors hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-39.5"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </div>
-    </div>
-  );
+    );
 }

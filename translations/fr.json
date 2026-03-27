@@ -2,6 +2,36 @@
   "Navbar": {
     "projects": "Projets",
     "contact": "Contact",
-    "resume": "Voir mon CV"
+    "resume": "Voir mon C.V."
+  },
+
+  "Hero": {
+    "role": "Développeur Logiciel Junior",
+    "headline": {
+      "first": "Apprendre et m'améliorer",
+      "second": "un projet à la fois"
+    },
+    "subtext": "Diplômé en génie informatique avec une base en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
+    "cta": {
+      "projects": "Mes projets",
+      "resume": "Mon C.V."
+    },
+    "scroll": "Défiler"
+  },
+
+  "Footer": {
+    "subtext": "Diplômé en génie informatique avec une base en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
+    "availability": "Disponible pour de nouveaux projets",
+    "explore": {
+      "title": "Explorer",
+      "projects": "Projets",
+      "contact": "Contact",
+      "resume": "C.V."
+    },
+    "location": {
+      "title": "Localisation",
+      "subtext": "Montréal, Québec, Canada"
+    },
+    "copyright": "Auxence MEDJA, Tous droits réservés."
   }
 }
