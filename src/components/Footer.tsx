@@ -1,7 +1,7 @@
 "use client"
 
 import {useTranslations} from "use-intl";
-import {Link} from '@/i18n/navigation';
+import Link from "next/link";
 import {ArrowUp, Copyright} from "lucide-react";
 
 export default function Footer() {
