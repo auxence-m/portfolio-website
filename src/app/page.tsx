@@ -32,7 +32,7 @@ export default function LanguageChoice() {
         <div className="min-h-screen bg-surface-container-lowest text-on-surface">
             <main className="flex flex-col min-h-screen justify-center items-center px-6 py-12">
                 <div className="w-full max-w-7xl mx-auto flex justify-end mb-6">
-                    <div className="bg-surface-container text-primary rounded-xl hover:bg-surface-container-high shadow-lg border border-outline-variant/20">
+                    <div className="bg-surface-container p-1 text-primary rounded-xl hover:bg-surface-container-high shadow-lg border border-outline-variant/20">
                         <ThemeToggle size={26}/>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ export default function ThemeToggle({size}: {size: number}) {
     }
 
     return (
-        <button type="button" onClick={handleThemeChange} className="p-3 group cursor-pointer">
+        <button type="button" onClick={handleThemeChange} className="p-2 group cursor-pointer">
             <Sun strokeWidth={2} size={size} className="transition-all duration-300 group-hover:rotate-45 hidden dark:block"/>
             <Moon strokeWidth={2} size={size} className="transition-all duration-300 group-hover:rotate-45 block dark:hidden"/>
         </button>

@@ -1,19 +1,26 @@
 import {useLocale} from "use-intl";
 import {useRouter} from 'next/navigation';
 
+const languages = ["en", "fr"];
+
 export default function LanguageToggle() {
     const locale = useLocale();
     const router = useRouter();
 
-    function handleChangeLanguage() {
-        router.replace(locale === "en" ? "/fr" : "/en", {scroll: false});
+    function handleChangeLanguage(lang: string) {
+        router.replace(`/${lang}`, {scroll: false});
+
     }
 
     return (
-        <button type="button" onClick={handleChangeLanguage} className="p-3 group cursor-pointer flex items-center justify-center flex-row gap-1">
-            <span className={`${locale == "en" ? "text-primary" : "text-on-surface-variant" }`}>EN</span>
-            {" / "}
-            <span className={`${locale == "fr" ? "text-primary" : "text-on-surface-variant" }`}>FR</span>
-        </button>
+        <div className="flex items-center bg-surface-container p-1.5 rounded-sm border border-outline-variant">
+            {
+                languages.map((lang, index) => (
+                    <button key={index} onClick={() => handleChangeLanguage(lang)} className={`px-2 py-1 font-bold tracking-widest uppercase rounded-sm cursor-pointer ${locale === lang ? "bg-primary text-on-primary shadow-sm" : "text-on-surface-variant hover:text-primary"}`}>
+                        {lang}
+                    </button>
+                ))
+            }
+        </div>
     );
 }
