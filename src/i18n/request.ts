@@ -12,3 +12,5 @@ export default getRequestConfig(async ({requestLocale}) => {
         messages: (await import(`../../translations/${locale}.json`)).default
     }
 });
+
+// https://next-intl.dev/docs/routing/setup
