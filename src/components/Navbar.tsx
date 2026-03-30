@@ -22,7 +22,7 @@ const navigation =[
 export default function Navbar() {
     const [openMobileMenu, setOpenMobileMenu] = useState(false)
 
-    const t = useTranslations('Navbar');
+    const t = useTranslations("Navbar");
     const locale = useLocale();
 
     function goToSection(id: string) {

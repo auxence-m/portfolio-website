@@ -5,7 +5,7 @@ import Link from "next/link";
 import {ArrowUp, Copyright} from "lucide-react";
 
 export default function Footer() {
-    const t = useTranslations('Footer');
+    const t = useTranslations("Footer");
 
     // TODO: Resume link open in new tab
     // TODO: Footer explore links onClick scroll to section
@@ -61,8 +61,8 @@ export default function Footer() {
                         <span>{t("copyright")}</span>
                     </div>
                     <div>
-                        <button type="button" className="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-primary hover:border-primary hover:text-on-primary transition-all rounded-sm group shadow-sm active:scale-95">
-                            <ArrowUp strokeWidth={2} size={24} className="group-hover:-translate-y-1 transition-transform"/>
+                        <button type="button" className="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-primary hover:border-primary hover:text-on-primary transition-all rounded-sm group shadow-sm active:scale-95 cursor-pointer">
+                            <ArrowUp strokeWidth={2} size={24} className="group-hover:-translate-y-1 transition-transform duration-300"/>
                         </button>
                     </div>
                 </div>
