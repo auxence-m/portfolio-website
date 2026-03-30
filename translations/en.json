@@ -19,6 +19,14 @@
     "scroll": "Scroll"
   },
 
+  "Education": {
+    "title": "Academic background",
+    "headline": "Education",
+    "program": "B.A.Sc. in Computer Engineering",
+    "university": "University Of Ottawa",
+    "description": "Developed a solid foundation of traditional engineering principles. Specialized in programming and software engineering concepts. Graduated Magna Cum Laude."
+  },
+
   "Footer": {
     "subtext": "Computer Engineering graduate with a foundation in software development, ready to grow and contribute to real-world projects",
     "availability": "Available for new projects",
