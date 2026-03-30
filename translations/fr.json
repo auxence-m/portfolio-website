@@ -33,6 +33,11 @@
     "description": "Développement d'une solide base des principes fondamentaux en ingénierie. Spécialisation en programmation et en génie logiciel. Diplômé avec mention Magna Cum Laude."
   },
 
+  "Tech": {
+    "title": "Technologies",
+    "headline": "Plateformes et Languages de Programmation"
+  },
+
   "Footer": {
     "subtext": "Diplômé en génie informatique avec une base en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
     "availability": "Disponible pour de nouveaux projets",

@@ -33,6 +33,11 @@
     "description": "Developed a solid foundation of traditional engineering principles. Specialized in programming and software engineering concepts. Graduated Magna Cum Laude."
   },
 
+  "Tech": {
+    "title": "Technology Stack",
+    "headline": "Platforms and Programming Languages"
+  },
+
   "Footer": {
     "subtext": "Computer Engineering graduate with a foundation in software development, ready to grow and contribute to real-world projects",
     "availability": "Available for new projects",
