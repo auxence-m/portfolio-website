@@ -11,12 +11,18 @@
       "first": "Learning and Improving",
       "second": "one project at a time"
     },
-    "subtext": "Computer Engineering graduate with a foundation in software development, ready to grow and contribute to real-world projects",
+    "subtext": "Computer Engineering graduate with a solid foundation in software development, ready to grow and contribute to real-world projects",
     "cta": {
       "projects": "My projects",
       "resume": "My resume"
     },
     "scroll": "Scroll"
+  },
+
+  "Summary": {
+    "title": "Professional Summary",
+    "headline": "Exploring web and cloud-native apps development.",
+    "subtext": "I am a Computer Engineering graduate with hands-on experience in full-stack development, cloud-native applications, and technical support. I have worked with Golang, React, and Google Cloud, anf have solid understanding of Agile practices, CI/CD, and software design. I am currently focused on improving my skills in web development and cloud-native application development. I am actively seeking for entry-level or junior software development roles where I can contribute, learn, and continue to grow as a developer."
   },
 
   "Education": {

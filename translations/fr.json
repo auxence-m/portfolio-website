@@ -11,12 +11,18 @@
       "first": "Apprendre et m'améliorer",
       "second": "un projet à la fois"
     },
-    "subtext": "Diplômé en génie informatique avec une base en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
+    "subtext": "Diplômé en génie informatique avec des bases solides en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
     "cta": {
       "projects": "Mes projets",
       "resume": "Mon C.V."
     },
     "scroll": "Défiler"
+  },
+
+  "Summary": {
+    "title": "Résumé professionnel",
+    "headline": "Enthousiaste du développement d’applications web et cloud-native",
+    "subtext": "Je suis diplômé en génie informatique avec une expérience pratique en développement full-stack, applications cloud-native et support technique. J’ai travaillé avec Golang, React et Google Cloud, et j’ai une bonne compréhension des pratiques Agile, du CI/CD ainsi que de la conception logicielle. Je me concentre actuellement sur le l'amélioration de mes compétences en développement web et en applications cloud-native. Je suis activement à la recherche de postes de développeur logiciel junior où je pourrais contribuer, apprendre et continuer à évoluer en tant que développeur."
   },
 
   "Education": {
