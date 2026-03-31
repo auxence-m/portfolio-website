@@ -18,7 +18,7 @@ export default function Education() {
                 </div>
                 <div className="relative border-l border-outline-variant ml-4 md:ml-0">
                     <div className="mb-10 pl-10 relative group">
-                        <div className="absolute -left-1 top-2 w-2 h-2 rounded-full bg-primary ring-8 ring-primary/20 group-hover:ring-12 transition-all"/>
+                        <div className="absolute -left-1 top-2 w-2 h-2 rounded-full bg-primary ring-8 ring-primary/20 group-hover:ring-12 transition-all duration-300"/>
                         <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
                             <h4 className="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">
                                 {t("program")}

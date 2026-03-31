@@ -75,7 +75,7 @@ export default function TechStack() {
             <div className="max-w-7xl mx-auto">
                 <div className="mb-24">
                     <h2 className="text-sm font-bold tracking-[0.3em] text-primary uppercase mb-6">{t("title")}</h2>
-                    <h3 className="text-4xl font-bold tracking-tight text-on-surface">{t("headline")}</h3>
+                    <h3 className="text-4xl md:text-5xl font-bold tracking-tight text-on-surface">{t("headline")}</h3>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                     {

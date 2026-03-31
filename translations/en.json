@@ -22,7 +22,7 @@
   "Summary": {
     "title": "Professional Summary",
     "headline": "Exploring web and cloud-native apps development.",
-    "subtext": "I am a Computer Engineering graduate with hands-on experience in full-stack development, cloud-native applications, and technical support. I have worked with Golang, React, and Google Cloud, anf have solid understanding of Agile practices, CI/CD, and software design. I am currently focused on improving my skills in web development and cloud-native application development. I am actively seeking for entry-level or junior software development roles where I can contribute, learn, and continue to grow as a developer."
+    "subtext": "I am a Computer Engineering graduate with hands-on experience in full-stack development, cloud-native applications, and technical support. I have worked with Golang, React, and Google Cloud, and have solid understanding of Agile practices, CI/CD, and software design. I am currently focused on improving my skills in web development and cloud-native application development. I am actively seeking for entry-level or junior software development roles where I can contribute, learn, and continue to grow as a developer."
   },
 
   "Education": {
@@ -36,6 +36,47 @@
   "Tech": {
     "title": "Technology Stack",
     "headline": "Platforms and Programming Languages"
+  },
+
+  "Experience": {
+    "title": "Career Path",
+    "headline": "Experience",
+    "technicalSupport": {
+      "title": "Customer Technical Support",
+      "company": "Vidéotron",
+      "city": "Montreal, QC",
+      "from": "October 2024",
+      "to": "December 2024",
+      "description": {
+        "first": "Resolved 15+ customer inquiries per day across mobile, internet, and TV services, achieving a 80% first-contact resolution rate.",
+        "second": "Documented customer issues and resolutions in support tickets, ensuring accurate records and efficient technician dispatch.",
+        "third": "Leveraged internal Standard Operating Procedures (SOPs) and knowledge bases to deliver consistent high-quality technical support."
+      }
+    },
+    "toolsProgrammer": {
+      "title": "Tools Programmer Intern",
+      "company": "Ubisoft",
+      "city": "Montreal, QC",
+      "from": "May 2022",
+      "to": "August 2022",
+      "description": {
+        "first": "Supported the migration of the game development pipeline from Python 2 to Python 3 by refactoring legacy scripts and performing testing for stability.",
+        "second": "Implemented functionalities for a reusable abstract interface with the Autodesk Maya C++ API, enabling cross-version compatibility for digital content creation tools.",
+        "third": "Improved reliability by refactoring legacy code and adding unit tests."
+      }
+    },
+    "webDeveloper": {
+      "title": "Web Developer Intern",
+      "company": "Ubisoft",
+      "city": "Montreal, QC",
+      "from": "May 2021",
+      "to": "August 2021",
+      "description": {
+        "first": "Added new features to a 3D web visualization library using Three.js and Angular, enabling interactive display of video game testing session data.",
+        "second": "Authored detailed technical documentation for 3D visualization features to streamline developer integration and improve codebase maintainability.",
+        "third": "Built interactive showcases with real game data, driving developer adoption of new features."
+      }
+    }
   },
 
   "Footer": {

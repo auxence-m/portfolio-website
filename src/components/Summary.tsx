@@ -13,12 +13,12 @@ export default function Summary() {
                         <h2 className="test-sm font-bold tracking-[0.3em] text-primary uppercase mb-6">
                             {t("title")}
                         </h2>
-                        <h3 className="text-4xl font-bold text-on-surface">
+                        <h3 className="text-4xl font-bold text-on-surface lg:text-balance">
                             {t("headline")}
                         </h3>
                     </div>
                     <div className="lg:col-span-8 flex flex-col gap-8">
-                        <p className="text-xl/8 md:text-2xl/9 text-on-surface font-light text-pretty">
+                        <p className="text-lg/8 md:text-xl/9 text-on-surface font-light text-pretty">
                             {t("subtext")}
                         </p>
                     </div>

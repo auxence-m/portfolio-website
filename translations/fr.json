@@ -38,6 +38,47 @@
     "headline": "Plateformes et Languages de Programmation"
   },
 
+  "Experience": {
+    "title": "Parcours professionnel",
+    "headline": "Expérience",
+    "technicalSupport": {
+      "title": "Service Technique",
+      "company": "Vidéotron",
+      "city": "Montreal, QC",
+      "from": "Octobre 2024",
+      "to": "Décembre 2024",
+      "description": {
+        "first": "Résolution de plus de 15 demandes clients par jour concernant les services mobiles, Internet et TV, avec un taux de résolution au premier contact de 80 %.",
+        "second": "Documentation des problèmes et des solutions des clients dans les tickets de support, garantissant l’exactitude des dossiers et une répartition efficace des techniciens.",
+        "third": "Utilisation des Procédures Opérationnelles Standard (POS) internes et des bases de connaissances pour fournir une assistance technique cohérente et de haute qualité."
+      }
+    },
+    "toolsProgrammer": {
+      "title": "Stagiaire Programmeur Outils",
+      "company": "Ubisoft",
+      "city": "Montreal, QC",
+      "from": "Mai 2022",
+      "to": "Août 2022",
+      "description": {
+        "first": "Participation à la migration d’une pipeline de développement de jeu de Python 2 vers Python 3 en refactorisant les scripts existants et en effectuant des tests de stabilité.",
+        "second": "Implémentation de fonctionnalités d’une interface abstraite réutilisable via l’API C++ de Autodesk Maya, permettant la compatibilité avec les versions précédentes pour la création de contenu numérique.",
+        "third": "Renforcement de la fiabilité et de la maintenabilité du code par la refactorisation du code legacy et l’ajout de tests unitaires automatisés."
+      }
+    },
+    "webDeveloper": {
+      "title": "Stagiaire Développeur Web",
+      "company": "Ubisoft",
+      "city": "Montreal, QC",
+      "from": "Mai 2021",
+      "to": "Août 2021",
+      "description": {
+        "first": "Développement de nouvelles fonctionnalités pour une bibliothèque de visualisation 3D web utilisant Three.js et Angular, permettant l’affichage interactif des données issues de sessions de test de jeux vidéo.",
+        "second": "Rédaction d’une documentation technique détaillée sur les fonctionnalités de visualisation 3D afin de faciliter l’intégration par les développeurs et d’améliorer la maintenabilité de la base de code.",
+        "third": "Création de démonstrations interactives basées sur des données réelles de jeux, favorisant l’adoption des nouvelles fonctionnalités par les équipes de développement."
+      }
+    }
+  },
+
   "Footer": {
     "subtext": "Diplômé en génie informatique avec une base en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
     "availability": "Disponible pour de nouveaux projets",
