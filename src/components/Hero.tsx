@@ -1,6 +1,6 @@
 "use client"
 
-import {useTranslations} from "use-intl";
+import {useTranslations} from "next-intl";
 import Link from "next/link";
 import {ArrowRight} from "lucide-react";
 
@@ -26,7 +26,7 @@ export default function Hero() {
                         <span className="text-primary italic">{t("headline.first")}</span>
                         <span> {t("headline.second")}</span>
                     </h1>
-                    <p className="text-xl md:text-2xl text-on-surface-variant max-w-2xl leading-relaxed mb-10">
+                    <p className="text-xl/8 md:text-2xl/9 text-on-surface-variant max-w-2xl mb-10">
                         {t("subtext")}
                     </p>
                     <div className="flex flex-wrap items-center gap-6">

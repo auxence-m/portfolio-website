@@ -1,4 +1,4 @@
-import {useLocale} from "use-intl";
+import {useLocale} from "next-intl";
 import {useRouter} from 'next/navigation';
 
 const languages = ["en", "fr"];

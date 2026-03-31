@@ -1,6 +1,6 @@
 "use client"
 
-import {useLocale, useTranslations} from "use-intl";
+import {useLocale, useTranslations} from "next-intl";
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
 import {Menu, X as XIcon } from "lucide-react";

@@ -1,6 +1,6 @@
 "use client"
 
-import {useTranslations} from "use-intl";
+import {useTranslations} from "next-intl";
 import Link from "next/link";
 import {ArrowUp, Copyright} from "lucide-react";
 
@@ -22,7 +22,7 @@ export default function Footer() {
                                 </div>
                                 <span className="font-bold tracking-tight text-xl text-on-surface-light">Auxence MEDJA</span>
                             </div>
-                            <p className="text-on-surface-variant text-base leading-relaxed">
+                            <p className="text-on-surface-variant text-base/7">
                                 {t("subtext")}
                             </p>
                         </div>
@@ -48,7 +48,7 @@ export default function Footer() {
                         </div>
                         <div className="flex flex-col gap-y-6">
                             <h4 className="text-xs font-bold tracking-widest text-primary uppercase">{t("location.title")}</h4>
-                            <p className="text-on-surface-variant text-sm font-medium leading-relaxed">
+                            <p className="text-on-surface-variant text-sm font-medium">
                                 {t("location.subtext")}
                             </p>
                         </div>
