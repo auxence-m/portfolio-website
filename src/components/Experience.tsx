@@ -37,7 +37,7 @@ export default function Experience() {
 
     return (
         <section id="experience" className="py-32 px-6 bg-surface border-t border-outline-variant">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-5xl mx-auto">
                 <div className="mb-24 text-center">
                     <h2 className="text-sm font-bold tracking-[0.3em] text-primary uppercase mb-6">
                         {t("title")}
@@ -59,7 +59,7 @@ export default function Experience() {
                                         {exp.company} • {exp.from} - {exp.to} • {exp.city}
                                     </span>
                                 </div>
-                                <ul className="list-disc ml-5 flex flex-col gap-y-2 text-on-surface-variant text-xl/8">
+                                <ul className="list-disc ml-5 flex flex-col gap-y-2 text-on-surface-variant text-lg">
                                     {
                                         exp.description.map((item, index) => (
                                             <li key={index}>

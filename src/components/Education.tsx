@@ -7,7 +7,7 @@ export default function Education() {
 
     return (
         <section id="education" className="py-32 px-6 bg-surface-container-low border-t border-outline-variant">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-5xl mx-auto">
                 <div className="mb-24 text-center">
                     <h2 className="text-sm font-bold tracking-[0.3em] text-primary uppercase mb-6">
                         {t("title")}
@@ -27,7 +27,7 @@ export default function Education() {
                                 {t("university")} • 2019 - 2023 • Ottawa, ON
                             </span>
                         </div>
-                        <p className="text-on-surface-variant text-xl/8">
+                        <p className="text-on-surface-variant text-lg">
                             {t("description")}
                         </p>
                     </div>

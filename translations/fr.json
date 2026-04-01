@@ -5,13 +5,13 @@
     "resume": "Voir mon C.V."
   },
 
-  "Hero": {
+  "HomeHero": {
     "role": "Développeur Logiciel Junior",
     "headline": {
       "first": "Apprendre et m'améliorer",
       "second": "un projet à la fois"
     },
-    "subtext": "Diplômé en génie informatique avec des bases solides en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
+    "subtext": "Diplômé en génie informatique avec des solides bases en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
     "cta": {
       "projects": "Mes projets",
       "resume": "Mon C.V."
