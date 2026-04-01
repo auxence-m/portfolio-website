@@ -79,6 +79,11 @@
     }
   },
 
+  "CallToAction": {
+    "title": "Let's work together",
+    "cta": "Start a conversation"
+  },
+
   "Footer": {
     "subtext": "Computer Engineering graduate with a foundation in software development, ready to grow and contribute to real-world projects",
     "availability": "Available for new projects",

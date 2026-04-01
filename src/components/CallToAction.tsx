@@ -1,0 +1,51 @@
+"use client"
+
+import {useTranslations} from "next-intl";
+import {ArrowRight} from "lucide-react";
+import Image from "next/image";
+
+const socials = [
+    {
+        name: "GitHub",
+        alt: "GitHub logo",
+        logo: "/github-logo.svg",
+    },
+    {
+        name: "LinkedIn",
+        alt: "LinkedIn logo",
+        logo: "/linkedin-logo.svg",
+    },
+]
+
+export default function CallToAction() {
+    const t = useTranslations("CallToAction");
+
+    return (
+        <section id="call-to-action" className="py-32 px-6 bg-surface-container relative border-t border-outline-variant overflow-hidden">
+            <div className="dot-background absolute ml-5 mt-1  inset-0"/>
+            <div className="max-w-5xl mx-auto text-center relative z-10">
+                <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-on-surface mb-12 lg:text-balance">
+                    {t("title")}
+                </h2>
+                <div className="flex items-center justify-center gap-4">
+                    <button className="px-8 py-6 inline-flex items-center justify-between md:w-96 gap-2 bg-primary text-on-primary font-bold text-sm tracking-widest uppercase group hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 transition-transform duration-300 active:translate-y-0 rounded-sm cursor-pointer">
+                        {t("cta")}
+                        <ArrowRight strokeWidth={2} size={20} className="relative z-10 group-hover:translate-x-1 transition-transform duration-300"/>
+                    </button>
+                </div>
+                <div className="mt-12 flex justify-center gap-10">
+                    {
+                        socials.map((social) => (
+                            <a href="#" key={social.name} className="inline-flex items-center justify-center gap-4 text-on-surface-variant group font-bold tracking-[0.2em] uppercase hover:text-primary">
+                                <div className="flex items-center shrink-0 justify-center p-2 border border-outline-variant rounded-sm group-hover:border-primary transition-all duration-300">
+                                    <Image alt={social.alt} src={social.logo} width={128} height={128} className="size-6"/>
+                                </div>
+                                {social.name}
+                            </a>
+                        ))
+                    }
+                </div>
+            </div>
+        </section>
+    );
+}

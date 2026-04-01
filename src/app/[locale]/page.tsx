@@ -3,6 +3,7 @@ import Summary from "@/components/Summary";
 import Education from "@/components/Education";
 import TechStack from "@/components/TechStack";
 import Experience from "@/components/Experience";
+import CallToAction from "@/components/CallToAction";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <Education/>
             <TechStack/>
             <Experience/>
+            <CallToAction/>
         </div>
     );
 

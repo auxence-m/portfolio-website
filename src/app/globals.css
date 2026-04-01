@@ -104,3 +104,8 @@
     --color-surface-container-low: var(--color-surface-container-low);
     --color-surface-container-lowest: var(--color-surface-container-lowest);
 }
+
+.dot-background {
+    background-image: radial-gradient(circle at 2px 2px, var(--color-primary) 1px, transparent 0);
+    background-size: 40px 40px;
+}
