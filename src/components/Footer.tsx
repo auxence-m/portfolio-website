@@ -46,7 +46,7 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
                         <div className="flex flex-col gap-y-6">
-                            <h4 className="text-xs font-bold tracking-widest text-primary uppercase">{t("explore.title")}</h4>
+                            <h4 className="text-sm font-bold tracking-widest text-primary uppercase">{t("explore.title")}</h4>
                             <ul className="flex flex-col gap-3">
                                 {
                                     navigation.map((item) => (
@@ -61,7 +61,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className="flex flex-col gap-y-6">
-                            <h4 className="text-xs font-bold tracking-widest text-primary uppercase">{t("location.title")}</h4>
+                            <h4 className="text-sm font-bold tracking-widest text-primary uppercase">{t("location.title")}</h4>
                             <p className="text-on-surface-variant text-sm font-medium">
                                 {t("location.subtext")}
                             </p>

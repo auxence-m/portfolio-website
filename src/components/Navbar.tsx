@@ -47,7 +47,7 @@ export default function Navbar() {
                             </Link>
                         ))
                     }
-                    <a href="#" className="px-5 py-2.5 bg-primary text-on-primary font-bold text-xs tracking-widest uppercase hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0 transition-all rounded-sm">
+                    <a href="#" className="px-5 py-2.5 bg-primary text-on-primary font-bold text-xs tracking-widest uppercase hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 rounded-sm">
                         {t("resume")}
                     </a>
                     <div className="h-6 w-px bg-outline-variant"/>

@@ -81,10 +81,7 @@ export default function TechStack() {
                     {
                         technologies.map((tech, index) => (
                             <div key={index} className="p-6 bg-surface-container-high border border-outline-variant rounded-sm flex flex-col items-center justify-center text-center group hover:border-primary hover:-translate-y-1 transition-all duration-500 relative">
-                                <Image alt={tech.alt}
-                                       src={tech.logo}
-                                       width={128} height={128}
-                                       className="mb-4 size-6 group-hover:scale-110 transition-all duration-500"/>
+                                <Image alt={tech.alt} src={tech.logo} width={128} height={128} className="mb-4 size-6 group-hover:scale-110 transition-all duration-500"/>
                                 <div className="font-bold tracking-widest text-on-surface group-hover:text-primary transition-colors">
                                     {tech.name}
                                 </div>

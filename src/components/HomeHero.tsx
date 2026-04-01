@@ -30,11 +30,11 @@ export default function HomeHero() {
                         {t("subtext")}
                     </p>
                     <div className="flex flex-wrap items-center gap-6">
-                        <Link href="/projects" className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 w-52 bg-primary text-on-primary font-bold text-sm tracking-widest uppercase rounded-sm overflow-hidden hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0">
+                        <Link href="/projects" className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 w-52 bg-primary text-on-primary font-bold text-sm tracking-widest uppercase rounded-sm hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 transition-all duration-300 active:translate-y-0">
                             <span className="relative z-10">{t("cta.projects")}</span>
-                            <ArrowRight strokeWidth={2} size={20} className="relative z-10 group-hover:translate-x-1 transition-transform"/>
+                            <ArrowRight strokeWidth={2} size={20} className="relative z-10 group-hover:translate-x-1 transition-transform duration-300"/>
                         </Link>
-                        <a className="inline-flex items-center justify-center gap-3 px-8 py-4 w-52 border border-outline-variant hover:border-primary hover:text-primary font-bold text-sm tracking-widest uppercase text-on-surface rounded-sm hover:-translate-y-0.5 active:translate-y-0 cursor-pointer">
+                        <a className="inline-flex items-center justify-center gap-3 px-8 py-4 w-52 border border-outline-variant hover:border-primary hover:text-primary font-bold text-sm tracking-widest uppercase text-on-surface rounded-sm hover:-translate-y-0.5 transition-all duration-300 active:translate-y-0 cursor-pointer">
                             {t("cta.resume")}
                         </a>
                     </div>
