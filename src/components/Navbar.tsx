@@ -1,37 +1,31 @@
 "use client"
 
-import {useLocale, useTranslations} from "next-intl";
-import Link from "next/link";
+import {useTranslations} from "next-intl";
+import {Link} from '@/i18n/navigation';
 import ThemeToggle from "@/components/ThemeToggle";
 import {Menu, X as XIcon } from "lucide-react";
 import {useState} from "react";
 import {Dialog, DialogBackdrop, DialogPanel} from "@headlessui/react";
 import LanguageToggle from "@/components/LanguageToggle";
+import {NavigationItem} from "@/lib/types";
 
-const navigation =[
-    {
-        name: "projects",
-        href: "#projects",
-    },
-    {
-        name: "contact",
-        href: "#contact",
-    }
-]
+
 
 export default function Navbar() {
     const [openMobileMenu, setOpenMobileMenu] = useState(false)
 
     const t = useTranslations("Navbar");
-    const locale = useLocale();
 
-    function goToSection(id: string) {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "instant", block: "start" });
+    const navigation: NavigationItem[] = [
+        {
+            name: t("projects"),
+            href: "/projects",
+        },
+        {
+            name: t("contact"),
+            href: "/contact",
         }
-        setOpenMobileMenu(false);
-    }
+    ]
 
     // TODO: Resume link open in new tab
 
@@ -39,16 +33,16 @@ export default function Navbar() {
         <nav className="fixed top-0 left-0 right-0 z-50 border-b border-outline-variant bg-surface/80 backdrop-blur-md transition-colors">
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                    <Link href={`/${locale}`} onClick={() => goToSection("hero")} className="w-10 h-10 bg-primary flex items-center justify-center rounded-sm transition-transform hover:scale-105 active:scale-95">
+                    <Link href="/" className="w-10 h-10 bg-primary flex items-center justify-center rounded-sm transition-transform hover:scale-105 active:scale-95">
                         <span className="text-on-primary font-bold text-xl leading-none">AM</span>
                     </Link>
                     <span className="font-bold tracking-tight text-lg text-on-surface">Auxence MEDJA</span>
                 </div>
                 <div className="hidden lg:flex items-center gap-10">
                     {
-                        navigation.map((nav) => (
-                            <Link key={nav.name} href={nav.href} onClick={() => goToSection(nav.name)} className="text-on-surface-variant hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
-                                {nav.name}
+                        navigation.map((item) => (
+                            <Link key={item.name} href={item.href} className="text-on-surface-variant hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
+                                {item.name}
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"/>
                             </Link>
                         ))
@@ -77,7 +71,7 @@ export default function Navbar() {
                 <DialogPanel transition className="flex flex-col fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-surface px-5 py-3.5 transform duration-500 ease-in-out data-closed:translate-x-full data-closed:opacity-100 sm:duration-700">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
-                            <Link href={`/${locale}`} onClick={() => setOpenMobileMenu(false)} className="mt-1.5 ml-1 w-10 h-10 bg-primary flex items-center justify-center rounded-sm transition-transform active:scale-95">
+                            <Link href="/" onClick={() => setOpenMobileMenu(false)} className="mt-1.5 ml-1 w-10 h-10 bg-primary flex items-center justify-center rounded-sm transition-transform active:scale-95">
                                 <span className="text-on-primary font-bold text-xl leading-none">AM</span>
                             </Link>
                             <span className="font-bold tracking-tight text-lg text-on-surface">Auxence MEDJA</span>
@@ -90,7 +84,7 @@ export default function Navbar() {
                     <div className="flex flex-col ml-2 gap-y-6 py-10 px-2">
                         {
                             navigation.map((nav) => (
-                                <Link key={nav.name} href={nav.href} onClick={() => goToSection(nav.name)} className="-mx-3 bg-outline-variant/20 p-5 rounded-sm block text-on-surface-variant transition-all font-medium text-sm tracking-wide uppercase">
+                                <Link key={nav.name} href={nav.href} className="-mx-3 bg-outline-variant/20 p-5 rounded-sm block text-on-surface-variant transition-all font-medium text-sm tracking-wide uppercase">
                                     {nav.name}
                                 </Link>
                             ))

@@ -1,14 +1,27 @@
 "use client"
 
 import {useTranslations} from "next-intl";
-import Link from "next/link";
+import {Link} from '@/i18n/navigation';
 import {ArrowUp, Copyright} from "lucide-react";
+import {NavigationItem} from "@/lib/types";
 
 export default function Footer() {
     const t = useTranslations("Footer");
 
+    const navigation: NavigationItem[] = [
+        {
+            name: t("explore.projects"),
+            href: "/projects",
+        },
+        {
+            name: t("explore.contact"),
+            href: "/contact",
+        }
+    ]
+
     // TODO: Resume link open in new tab
     // TODO: Footer explore links onClick scroll to section
+    // TODO: Add socials link to footer
 
     return (
         <footer className="py-20 px-6 border-t border-outline-variant bg-surface-dim transition-colors">
@@ -35,12 +48,13 @@ export default function Footer() {
                         <div className="flex flex-col gap-y-6">
                             <h4 className="text-xs font-bold tracking-widest text-primary uppercase">{t("explore.title")}</h4>
                             <ul className="flex flex-col gap-3">
-                                <li>
-                                    <Link href="/#projects" className="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium">{t("explore.projects")}</Link>
-                                </li>
-                                <li>
-                                    <Link href="/#contact" className="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium">{t("explore.contact")}</Link>
-                                </li>
+                                {
+                                    navigation.map((item) => (
+                                        <li key={item.name}>
+                                            <Link href={item.href} className="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium">{item.name}</Link>
+                                        </li>
+                                    ))
+                                }
                                 <li>
                                     <a href="#" className="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium">{t("explore.resume")}</a>
                                 </li>
