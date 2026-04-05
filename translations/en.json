@@ -5,6 +5,15 @@
     "resume": "View Resume"
   },
 
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "The resource you’re looking for doesn’t exist or may have been relocated. Please check the URL or return to the homepage.",
+    "cta": {
+      "home": "Return to home",
+      "projects": "View recent work"
+    }
+  },
+
   "HomeHero": {
     "role": "Junior Software developer",
     "headline": {

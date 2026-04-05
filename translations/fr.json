@@ -5,6 +5,15 @@
     "resume": "Voir mon C.V."
   },
 
+  "NotFound": {
+    "title": "Page Non Trouvée",
+    "description": "La page que vous recherchez n’existe pas ou a peut-être été déplacée. Veuillez vérifier l’adresse URL ou revenir à la page d’accueil.",
+    "cta": {
+      "home": "Return à Accueil",
+      "projects": "Voir projets recent"
+    }
+  },
+
   "HomeHero": {
     "role": "Développeur Logiciel Junior",
     "headline": {
