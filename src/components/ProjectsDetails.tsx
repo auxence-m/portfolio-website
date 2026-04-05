@@ -63,7 +63,7 @@ export default function ProjectsDetails() {
                                     </p>
                                 </div>
                                 {/* FEATURES */}
-                                <div className="order-2 lg:col-span-5 lg:pl-12 border-l border-outline-variant/10 lg:row-span-2">
+                                <div className="order-2 lg:col-span-5 lg:pl-12 lg:border-l border-outline-variant/10 lg:row-span-2">
                                     <h3 className="text-xs uppercase tracking-[0.2em] text-outline-variant mb-6">
                                         {t("helper.features")}
                                     </h3>

@@ -29,6 +29,7 @@ export default function HomeHero() {
                     <p className="text-xl/8 md:text-2xl/9 text-on-surface-variant max-w-2xl mb-10">
                         {t("subtext")}
                     </p>
+                    {/* CTA BUTTONS */}
                     <div className="flex flex-wrap items-center gap-6">
                         <Link href="/projects" className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 w-52 bg-primary text-on-primary font-bold text-sm tracking-widest uppercase rounded-sm hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 transition-all duration-300 active:translate-y-0">
                             <span className="relative z-10">{t("cta.projects")}</span>

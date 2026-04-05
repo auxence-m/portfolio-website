@@ -8,6 +8,7 @@ import {useState} from "react";
 import {Dialog, DialogBackdrop, DialogPanel} from "@headlessui/react";
 import LanguageToggle from "@/components/LanguageToggle";
 import {NavigationItem} from "@/lib/types";
+import {useSelectedLayoutSegment} from "next/navigation";
 
 
 
@@ -15,6 +16,11 @@ export default function Navbar() {
     const [openMobileMenu, setOpenMobileMenu] = useState(false)
 
     const t = useTranslations("Navbar");
+
+    const selectedLayoutSegment = useSelectedLayoutSegment();
+    const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : "/"
+
+    console.log(pathname)
 
     const navigation: NavigationItem[] = [
         {
@@ -43,7 +49,7 @@ export default function Navbar() {
                 <div className="hidden lg:flex items-center gap-10">
                     {
                         navigation.map((item) => (
-                            <Link key={item.name} href={item.href} className="text-on-surface-variant hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide uppercase relative group">
+                            <Link key={item.name} href={item.href} className={`font-medium text-sm tracking-wide uppercase relative hover:text-primary transition-all duration-300 group ${pathname === item.href ? "text-primary underline underline-offset-7 decoration-2" :  "text-on-surface-variant"}`}>
                                 {item.name}
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"/>
                             </Link>

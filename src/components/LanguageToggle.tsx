@@ -9,7 +9,7 @@ export default function LanguageToggle() {
     const router = useRouter();
 
     function handleChangeLanguage(lang: string) {
-        router.replace(pathname, {locale: lang});
+        router.replace(pathname, {locale: lang, scroll: false});
 
     }
 
