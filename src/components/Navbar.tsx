@@ -84,7 +84,7 @@ export default function Navbar() {
                     <div className="flex flex-col ml-2 gap-y-6 py-10 px-2">
                         {
                             navigation.map((nav) => (
-                                <Link key={nav.name} href={nav.href} className="-mx-3 bg-outline-variant/20 p-5 rounded-sm block text-on-surface-variant transition-all font-medium text-sm tracking-wide uppercase">
+                                <Link key={nav.name} href={nav.href} onClick={() => setOpenMobileMenu(false)} className="-mx-3 bg-outline-variant/20 p-5 rounded-sm block text-on-surface-variant transition-all font-medium text-sm tracking-wide uppercase">
                                     {nav.name}
                                 </Link>
                             ))

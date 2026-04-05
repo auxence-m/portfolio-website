@@ -1,14 +1,15 @@
 import {useLocale} from "next-intl";
-import {useRouter} from 'next/navigation';
+import {useRouter, usePathname} from "@/i18n/navigation";
 
 const languages = ["en", "fr"];
 
 export default function LanguageToggle() {
     const locale = useLocale();
+    const pathname = usePathname();
     const router = useRouter();
 
     function handleChangeLanguage(lang: string) {
-        router.replace(`/${lang}`, {scroll: false});
+        router.replace(pathname, {locale: lang});
 
     }
 
