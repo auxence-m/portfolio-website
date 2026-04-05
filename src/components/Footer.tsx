@@ -20,8 +20,12 @@ export default function Footer() {
     ]
 
     // TODO: Resume link open in new tab
-    // TODO: Footer explore links onClick scroll to section
-    // TODO: Add socials link to footer
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }
 
     return (
         <footer className="py-20 px-6 border-t border-outline-variant bg-surface-dim transition-colors">
@@ -78,7 +82,7 @@ export default function Footer() {
                         <span>{t("copyright")}</span>
                     </div>
                     <div>
-                        <button type="button" className="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-primary hover:border-primary hover:text-on-primary transition-all rounded-sm group shadow-sm active:scale-95 cursor-pointer">
+                        <button type="button" onClick={scrollToTop} className="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-primary hover:border-primary hover:text-on-primary transition-all rounded-sm group shadow-sm active:scale-95 cursor-pointer">
                             <ArrowUp strokeWidth={2} size={24} className="group-hover:-translate-y-1 transition-transform duration-300"/>
                         </button>
                     </div>
