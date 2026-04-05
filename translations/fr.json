@@ -81,7 +81,60 @@
 
   "CallToAction": {
     "title": "Collaborons ensemble",
+    "message": "Envoyer un message",
+    "connect": "Connectez avec moi",
     "cta": "Démarrer une discussion"
+  },
+
+  "ProjectsHero": {
+    "title": "Projets Phares",
+    "helper": "Mes travaux",
+    "subtext": "Quelques projets sélectionnés parmi de nombreux travaux, reflétant mes compétences, mes centres d’intérêt et ma façon d’aborder la résolution de problèmes."
+  },
+
+  "ProjectsList": {
+    "helper":  {
+      "features": "Fonctionnalités",
+      "code": "Code Source",
+      "demo": "Demo Live "
+    },
+
+    "ArboML": {
+      "name": "ArboML",
+      "description": "ArboML est une application web moderne et responsive conçue pour présenter les services d’un arboriste local et faciliter la prise de contact avec les clients. Elle met l’accent sur la performance et une expérience utilisateur fluide sur tous les appareils.",
+      "features": {
+        "first": "Interface responsive développée avec Next.js, Tailwind CSS et TypeScript.",
+        "second": "Formulaire de contact serverless utilisant Firebase Cloud Functions et Nodemailer.",
+        "third": "Déploiement sur Vercel pour des performances rapides et fiables."
+      }
+    },
+    "Cloudtail": {
+      "name": "Cloudtail",
+      "description": "Cloudtail est un outil CLI et cloud-native développé en Go qui permet d’interroger et de diffuser des logs en temps réel depuis Google Cloud Logging. Il facilite le débogage grâce à une récupération rapide et filtrée des logs directement depuis le terminal.",
+      "features": {
+        "first": "Diffuser les logs en temps réel et rechercher les logs historiques.",
+        "second": "Filtrer les logs par niveau de sévérité, type de ressource et plage de temps.",
+        "third": "Exporter les logs vers le terminal ou un fichier pour une analyse flexible."
+      }
+    },
+    "urlShortener": {
+      "name": "URL Shortener",
+      "description": "Une simple application serverless développée avec Go, Google Cloud Run et Firebase, permettant de créer des URL raccourcies redirigeant vers des liens plus longs. Les données et statistiques d’utilisation sont stockées dans Cloud Firestore.",
+      "features": {
+        "first": "Créer des URL courtes redirigeant vers les liens originaux.",
+        "second": "Stocker et gérer les URL et leurs métadonnées avec Cloud Firestore.",
+        "third": "Suivre l’utilisation grâce au comptage des clics pour chaque lien."
+      }
+    },
+    "goWeather": {
+      "name": "Go Weather",
+      "description": "go-weather est un simple outil CLI développée en Go qui permet d’obtenir les conditions météorologiques actuelles ainsi que des prévisions météorologiques pour différentes localisations à travers le monde. Elle utilise la bibliothèque spf13/cobra pour offrir une expérience CLI simple et efficace.",
+      "features": {
+        "first": "Récupérer les conditions météorologiques actuelles et des prévisions météorologiques jusqu’à 16 jours.",
+        "second": "Rechercher la météo par nom de ville ou code postal, avec option de pays.",
+        "third": "Personnaliser l’affichage avec le choix des unités (Celsius ou Fahrenheit)."
+      }
+    }
   },
 
   "Footer": {

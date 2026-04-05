@@ -3,9 +3,9 @@ import Summary from "@/components/Summary";
 import Education from "@/components/Education";
 import TechStack from "@/components/TechStack";
 import Experience from "@/components/Experience";
-import CallToAction from "@/components/CallToAction";
+import HomeCTA from "@/components/HomeCTA";
 
-export default function Home() {
+export default function HomePage() {
     return (
         <div className="flex flex-col">
             <HomeHero/>
@@ -13,7 +13,7 @@ export default function Home() {
             <Education/>
             <TechStack/>
             <Experience/>
-            <CallToAction/>
+            <HomeCTA/>
         </div>
     );
 

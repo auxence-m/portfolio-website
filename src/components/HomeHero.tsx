@@ -10,20 +10,20 @@ export default function HomeHero() {
     // TODO: Resume link open in new tab
 
     return (
-        <div id="hero" className="flex flex-1 flex-col pt-26 px-6 relative overflow-hidden bg-surface">
+        <div id="home-hero" className="flex flex-1 flex-col pt-30 px-6 relative overflow-hidden bg-surface">
             <div className="absolute top-1/4 -right-20 w-96 h-96 bg-primary/10 dark:bg-primary/10 rounded-full blur-[120px]"/>
             <div className="absolute bottom-1/4 -left-20 w-64 h-64 bg-secondary/10 blur-[100px]"/>
             <div className="max-w-7xl mx-auto w-full relative z-10 mb-4">
                 {/* MAIN CONTENT */}
                 <div className="flex flex-1 flex-col justify-center">
-                    <div className="mb-4 flex items-center gap-3">
+                    <div className="mb-4 flex items-center gap-4">
                         <span className="h-0.5 w-10 bg-primary"/>
                         <span className="text-primary font-bold tracking-[0.2em] text-xs uppercase">
                             {t("role")}
                         </span>
                     </div>
                     <h1 className="text-6xl md:text-8xl font-bold mb-10 max-w-4xl text-on-surface">
-                        <span className="text-primary italic">{t("headline.first")}</span>
+                        <span className="text-primary">{t("headline.first")}</span>
                         <span> {t("headline.second")}</span>
                     </h1>
                     <p className="text-xl/8 md:text-2xl/9 text-on-surface-variant max-w-2xl mb-10">
