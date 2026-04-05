@@ -8,6 +8,7 @@ export default function Education() {
     return (
         <section id="education" className="py-32 px-6 bg-surface-container-low border-t border-outline-variant">
             <div className="max-w-5xl mx-auto">
+                {/* TITLE */}
                 <div className="mb-24 text-center">
                     <h2 className="text-sm font-bold tracking-[0.3em] text-primary uppercase mb-6">
                         {t("title")}
@@ -16,6 +17,7 @@ export default function Education() {
                         {t("headline")}
                     </h3>
                 </div>
+                {/* MAIN CONTENT */}
                 <div className="relative border-l border-outline-variant ml-4 md:ml-0">
                     <div className="mb-10 pl-10 relative group">
                         <div className="absolute -left-1 top-2 w-2 h-2 rounded-full bg-primary ring-8 ring-primary/20 group-hover:ring-12 transition-all duration-300"/>

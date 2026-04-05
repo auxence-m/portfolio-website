@@ -18,13 +18,9 @@ export default function proxy(request: NextRequest) {
     const hasValidLocale = locales?.some((locale: string) => pathname.startsWith(`/${locale}`));
 
     if (!hasValidLocale) {
-        // Check for a remembered locale in cookie
-        const cookieLang = request.cookies.get("preferred_language")?.value;
-        const redirectLocale = cookieLang && locales.includes(cookieLang as ("en" | "fr")) ? cookieLang : defaultLocale;
-
-        // Redirect non-localized paths
+        // Redirect non-localized paths (other than "/") to default locale
         const url = request.nextUrl.clone();
-        url.pathname = `/${redirectLocale}/${pathname}`;
+        url.pathname = `/${defaultLocale}/${pathname}`;
         return NextResponse.redirect(url);
     }
 

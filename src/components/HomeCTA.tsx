@@ -23,7 +23,9 @@ export default function HomeCTA() {
 
     return (
         <section id="home-cta" className="py-32 px-6 bg-surface-container relative border-t border-outline-variant overflow-hidden">
-            <div className="dot-background absolute ml-5 mt-1  inset-0"/>
+            {/* DOTTED BACKGROUND */}
+            <div className="dot-background absolute ml-5 mt-1 inset-0"/>
+            {/* MAIN CONTENT */}
             <div className="max-w-5xl mx-auto text-center relative z-10">
                 <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-on-surface mb-12 lg:text-balance">
                     {t("title")}

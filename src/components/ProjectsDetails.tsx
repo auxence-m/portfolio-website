@@ -53,6 +53,7 @@ export default function ProjectsDetails() {
                     <article id={project.id} key={project.name} className="group relative border-b border-outline-variant/10 hover:bg-surface-container/30 transition-all duration-500 scroll-mt-20">
                         <div className="max-w-7xl px-6 mx-auto py-30">
                             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                                {/* NAME AND DESCRIPTION */}
                                 <div className="order-1 lg:col-span-7 flex flex-col gap-y-4">
                                     <h2 className="text-4xl md:text-5xl font-bold tracking-tighter group-hover:text-primary transition-colors duration-300 mb-4">
                                         {project.name}
@@ -61,6 +62,7 @@ export default function ProjectsDetails() {
                                         {project.description}
                                     </p>
                                 </div>
+                                {/* FEATURES */}
                                 <div className="order-2 lg:col-span-5 lg:pl-12 border-l border-outline-variant/10 lg:row-span-2">
                                     <h3 className="text-xs uppercase tracking-[0.2em] text-outline-variant mb-6">
                                         {t("helper.features")}
@@ -75,6 +77,7 @@ export default function ProjectsDetails() {
                                         }
                                     </ul>
                                 </div>
+                                {/* TECH PILLS AND CTA */}
                                 <div className="order-3 lg:col-span-7 flex flex-col gap-y-8">
                                     <div className="flex flex-wrap gap-3">
                                         {

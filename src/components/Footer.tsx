@@ -27,6 +27,7 @@ export default function Footer() {
         <footer className="py-20 px-6 border-t border-outline-variant bg-surface-dim transition-colors">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col lg:flex-row justify-between gap-16 mb-20">
+                    {/* LEFT HAND SIDE */}
                     <div className="flex flex-col max-w-sm gap-y-8">
                         <div className="flex flex-col gap-y-4">
                             <div className="flex items-center gap-3">
@@ -44,6 +45,7 @@ export default function Footer() {
                             <span className="text-xs font-bold tracking-widest text-on-surface uppercase">{t("availability")}</span>
                         </div>
                     </div>
+                    {/* RIGHT HAND SIDE */}
                     <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
                         <div className="flex flex-col gap-y-6">
                             <h4 className="text-sm font-bold tracking-widest text-primary uppercase">{t("explore.title")}</h4>
@@ -68,6 +70,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
+                {/* BOTTOM SECTION */}
                 <div className="pt-10 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-8">
                     <div className="text-xs font-bold tracking-widest text-outline uppercase flex gap-x-1">
                         <Copyright size={16} strokeWidth={1.5}/>

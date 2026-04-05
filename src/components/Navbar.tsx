@@ -31,6 +31,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 border-b border-outline-variant bg-surface/80 backdrop-blur-md transition-colors">
+            {/* DESKTOP MENU */}
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                     <Link href="/" className="w-10 h-10 bg-primary flex items-center justify-center rounded-sm transition-transform hover:scale-105 active:scale-95">
@@ -38,6 +39,7 @@ export default function Navbar() {
                     </Link>
                     <span className="font-bold tracking-tight text-lg text-on-surface">Auxence MEDJA</span>
                 </div>
+                {/* LINKS */}
                 <div className="hidden lg:flex items-center gap-10">
                     {
                         navigation.map((item) => (
@@ -51,6 +53,7 @@ export default function Navbar() {
                         {t("resume")}
                     </a>
                     <div className="h-6 w-px bg-outline-variant"/>
+                    {/* LANGUAGE AND THEME TOGGLE */}
                     <div className="flex items-center gap-4">
                         <div className="flex items-center justify-center text-xs font-bold tracking-widest uppercase rounded-sm">
                             <LanguageToggle/>
@@ -60,11 +63,13 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
+                {/* MOBILE MENU BUTTON */}
                 <button type="button" onClick={() => setOpenMobileMenu(true)} className="flex items-center justify-center lg:hidden text-on-surface hover:text-primary transition-colors">
                     <span className="sr-only">Open menu / Ouvrir menu</span>
                     <Menu strokeWidth={2} size={28}/>
                 </button>
             </div>
+            {/* MOBILE MENU */}
             <Dialog open={openMobileMenu} onClose={() => setOpenMobileMenu(false)} className="lg:hidden">
                 <DialogBackdrop transition className="fixed inset-0 bg-black/30 duration-500 ease-in-out data-closed:opacity-0"/>
                 <div className="fixed inset-0 z-50"/>
@@ -81,6 +86,7 @@ export default function Navbar() {
                             <XIcon strokeWidth={2} size={26}/>
                         </button>
                     </div>
+                    {/* LINKS */}
                     <div className="flex flex-col ml-2 gap-y-6 py-10 px-2">
                         {
                             navigation.map((nav) => (
@@ -90,12 +96,14 @@ export default function Navbar() {
                             ))
                         }
                     </div>
+                    {/* MOBILE MENU BOTTOM SECTION */}
                     <div className="mt-auto ml-2 flex flex-col gap-6">
                         <div className="py-6">
                             <a href="#" className=" flex items-center justify-center p-5 bg-primary text-on-primary font-bold text-xs tracking-widest uppercase active:translate-y-0 transition-all rounded-sm">
                                 {t("resume")}
                             </a>
                         </div>
+                        {/* LANGUAGE AND THEME TOGGLE */}
                         <div className="flex items-center justify-between border-t border-outline-variant pt-6">
                             <div className="flex items-center justify-center text-sm font-bold tracking-widest uppercase text-on-surface-variant">
                                 <LanguageToggle/>

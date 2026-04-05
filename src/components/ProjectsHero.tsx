@@ -39,6 +39,7 @@ export default function ProjectsHero() {
                             {t("helper")}
                         </span>
                     </div>
+                    {/* TITLE AND SUBTEXT */}
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
                         <div className="lg:col-span-8">
                             <h1 className="text-6xl md:text-9xl font-bold tracking-tighter uppercase bg-linear-[195deg] from-on-surface to-primary bg-clip-text text-transparent">
@@ -51,6 +52,7 @@ export default function ProjectsHero() {
                             </p>
                         </div>
                     </div>
+                    {/* NAV SECTION - PROJECT TITLES */}
                     <div className="mt-20 max-w-5xl">
                         <div className="flex flex-wrap items-center gap-4">
                             {
