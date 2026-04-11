@@ -2,7 +2,7 @@
 
 import {useTranslations} from "next-intl";
 import {ProjectDetails} from "@/lib/types";
-import {Code as CodeIcon, SquareArrowOutUpRight} from "lucide-react";
+import {CodeIcon, SquareArrowOutUpRight} from "lucide-react";
 
 export default function ProjectsDetails() {
     const t = useTranslations("ProjectsList");

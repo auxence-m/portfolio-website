@@ -33,7 +33,7 @@ export default function ProjectsHero() {
         <section id="project-hero" className="py-30 px-6 bg-surface-dim">
             <div className="max-w-7xl w-full relative z-10 mx-auto">
                 <div className="flex flex-1 flex-col justify-center ">
-                    <div className="flex items-center gap-4 mb-8">
+                    <div className="flex items-center gap-4 mb-4">
                         <span className="h-0.5 w-10 bg-primary"/>
                         <span className="text-primary font-bold tracking-[0.2em] text-xs uppercase">
                             {t("helper")}
@@ -53,7 +53,7 @@ export default function ProjectsHero() {
                         </div>
                     </div>
                     {/* NAV SECTION - PROJECT TITLES */}
-                    <div className="mt-20 max-w-5xl">
+                    <div className="mt-10 lg:mt-20 max-w-5xl">
                         <div className="flex flex-wrap items-center gap-4">
                             {
                                 projectsList.map((project) => (

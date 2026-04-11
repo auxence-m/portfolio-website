@@ -2,7 +2,7 @@
 
 import {useTranslations} from "next-intl";
 import {Link} from '@/i18n/navigation';
-import {ArrowUp, Copyright} from "lucide-react";
+import {ArrowUp, CopyrightIcon} from "lucide-react";
 import {NavigationItem} from "@/lib/types";
 
 export default function Footer() {
@@ -77,7 +77,7 @@ export default function Footer() {
                 {/* BOTTOM SECTION */}
                 <div className="pt-10 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-8">
                     <div className="text-xs font-bold tracking-widest text-outline uppercase flex gap-x-1">
-                        <Copyright size={16} strokeWidth={1.5}/>
+                        <CopyrightIcon size={16} strokeWidth={1.5}/>
                         <span>{new Date().getFullYear()}.</span>
                         <span>{t("copyright")}</span>
                     </div>

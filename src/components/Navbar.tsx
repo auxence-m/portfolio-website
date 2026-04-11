@@ -3,7 +3,7 @@
 import {useTranslations} from "next-intl";
 import {Link} from '@/i18n/navigation';
 import ThemeToggle from "@/components/ThemeToggle";
-import {Menu, X as XIcon } from "lucide-react";
+import {MenuIcon, XIcon} from "lucide-react";
 import {useState} from "react";
 import {Dialog, DialogBackdrop, DialogPanel} from "@headlessui/react";
 import LanguageToggle from "@/components/LanguageToggle";
@@ -19,8 +19,6 @@ export default function Navbar() {
 
     const selectedLayoutSegment = useSelectedLayoutSegment();
     const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : "/"
-
-    console.log(pathname)
 
     const navigation: NavigationItem[] = [
         {
@@ -72,7 +70,7 @@ export default function Navbar() {
                 {/* MOBILE MENU BUTTON */}
                 <button type="button" onClick={() => setOpenMobileMenu(true)} className="flex items-center justify-center lg:hidden text-on-surface hover:text-primary transition-colors">
                     <span className="sr-only">Open menu / Ouvrir menu</span>
-                    <Menu strokeWidth={2} size={28}/>
+                    <MenuIcon strokeWidth={2} size={28}/>
                 </button>
             </div>
             {/* MOBILE MENU */}

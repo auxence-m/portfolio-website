@@ -1,7 +1,7 @@
 "use client";
 
 import {useTheme} from "next-themes";
-import {Moon, Sun} from "lucide-react";
+import {MoonIcon, SunIcon} from "lucide-react";
 
 export default function ThemeToggle({size}: {size: number}) {
     const {resolvedTheme, setTheme} = useTheme();
@@ -12,8 +12,8 @@ export default function ThemeToggle({size}: {size: number}) {
 
     return (
         <button type="button" onClick={handleThemeChange} className="p-2 group cursor-pointer">
-            <Sun strokeWidth={2} size={size} className="transition-all duration-300 group-hover:rotate-45 hidden dark:block"/>
-            <Moon strokeWidth={2} size={size} className="transition-all duration-300 group-hover:rotate-45 block dark:hidden"/>
+            <SunIcon strokeWidth={2} size={size} className="transition-all duration-300 group-hover:rotate-45 hidden dark:block"/>
+            <MoonIcon strokeWidth={2} size={size} className="transition-all duration-300 group-hover:rotate-45 block dark:hidden"/>
         </button>
     )
 }
