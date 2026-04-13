@@ -24,11 +24,11 @@ export default function NotFound() {
                 </div>
                 {/* CTA BUTTONS */}
                 <div className="flex flex-col lg:flex-row items-center justify-center gap-6">
-                    <Link href="/" className="group relative inline-flex items-center justify-center gap-3 px-10 py-4 w-64 bg-primary text-on-primary font-bold uppercase rounded-sm hover:bg-primary/90 transition-all duration-300">
+                    <Link href="/" className="group relative inline-flex items-center justify-center gap-3 px-10 py-4 w-64 bg-primary text-on-primary font-bold uppercase rounded-sm hover:bg-primary/90 transition-all duration-300 active:scale-95">
                         <span className="relative z-10">{t("cta.home")}</span>
                         <ArrowRight strokeWidth={2} size={20} className="relative z-10 group-hover:translate-x-1 transition-transform duration-300"/>
                     </Link>
-                    <Link href="/projects" className="inline-flex items-center justify-center gap-3 px-10 py-4 w-64 border border-outline-variant/30 hover:bg-surface-container font-bold uppercase text-on-surface rounded-sm transition-colors duration-300">
+                    <Link href="/projects" className="inline-flex items-center justify-center gap-3 px-10 py-4 w-64 border border-outline-variant/30 hover:bg-surface-container hover:border-primary/80 font-bold uppercase text-on-surface rounded-sm transition-all duration-300 active:scale-95">
                         {t("cta.projects")}
                     </Link>
                 </div>
