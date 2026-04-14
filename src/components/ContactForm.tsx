@@ -25,7 +25,7 @@ export default function ContactForm() {
             <div className="max-w-7xl w-full mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 overflow-hidden rounded-2xl border border-outline-variant/50">
                     {/* LEFT: DIRECT CONTACT INFO */}
-                    <div className="lg:col-span-5 bg-surface/80 p-8 lg:p-16 border-b lg:border-b-0 lg:border-r border-outline-variant/20">
+                    <div className="lg:col-span-5 bg-surface-container/80 p-8 lg:p-16 border-b lg:border-b-0 lg:border-r border-outline-variant/20">
                         <div className="flex flex-col gap-y-16">
                             {/* MAIL AND LOCATION */}
                             <div className="flex flex-col gap-y-6">
