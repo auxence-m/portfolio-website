@@ -3,8 +3,7 @@
 import {useTranslations} from "next-intl";
 import {Link} from "@/i18n/navigation";
 import {ArrowUpRight} from "lucide-react";
-
-const socials = ["GitHub", "LinkedIn"];
+import {socialMedias} from "@/lib/utils";
 
 export default function ProjectsCTA() {
     const t = useTranslations("CallToAction");
@@ -38,9 +37,9 @@ export default function ProjectsCTA() {
                                 </p>
                                 <div className="flex gap-10 relative">
                                     {
-                                        socials.map((social,index) => (
-                                            <a href="#" key={index} className="inline-flex items-center text-sm justify-center gap-2 text-on-surface group font-bold tracking-[0.2em] uppercase hover:text-primary">
-                                                {social}
+                                        socialMedias.map((social,index) => (
+                                            <a target="_blank" rel="noopener noreferrer" href={social.href} key={index} className="inline-flex items-center text-sm justify-center gap-2 text-on-surface group font-bold tracking-[0.2em] uppercase hover:text-primary">
+                                                {social.name}
                                                 <ArrowUpRight strokeWidth={2} size={16} className="opacity-0 group-hover:opacity-100 transition-all translate-x-2 group-hover:translate-x-0"/>
                                             </a>
                                         ))

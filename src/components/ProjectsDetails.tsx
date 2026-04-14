@@ -12,8 +12,8 @@ export default function ProjectsDetails() {
             id: "arboml",
             name: t("ArboML.name"),
             description: t("ArboML.description"),
-            codeLink: "#",
-            demoLink: "#",
+            codeLink: "https://github.com/auxence-m/arboml-website",
+            demoLink: "https://www.arboml.ca/",
             features: [t("ArboML.features.first"), t("ArboML.features.second"), t("ArboML.features.third")],
             technologies: ["Next.js", "TypeScript", "Tailwindcss", "Firebase"]
         },
@@ -21,8 +21,8 @@ export default function ProjectsDetails() {
             id: "cloudtail",
             name: t("Cloudtail.name"),
             description: t("Cloudtail.description"),
-            codeLink: "#",
-            demoLink: "#",
+            codeLink: "https://github.com/auxence-m/cloudtail",
+            demoLink: "https://cloudtail-docs.vercel.app/",
             features: [t("Cloudtail.features.first"), t("Cloudtail.features.second"), t("Cloudtail.features.third")],
             technologies: ["Go", "Google Cloud", "Next.js", "TypeScript"]
         },
@@ -30,8 +30,8 @@ export default function ProjectsDetails() {
             id: "url-shortener",
             name: t("urlShortener.name"),
             description: t("urlShortener.description"),
-            codeLink: "#",
-            demoLink: "#",
+            codeLink: "https://github.com/auxence-m/url-shortener",
+            demoLink: "https://url-shortener-470717.web.app/",
             features: [t("urlShortener.features.first"), t("urlShortener.features.second"), t("urlShortener.features.third")],
             technologies: ["Go", "Google Cloud", "React", "JavaScript"]
         },
@@ -39,7 +39,7 @@ export default function ProjectsDetails() {
             id: "go-weather",
             name: t("goWeather.name"),
             description: t("goWeather.description"),
-            codeLink: "#",
+            codeLink: "https://github.com/auxence-m/go-weather",
             demoLink: "",
             features: [t("goWeather.features.first"), t("goWeather.features.second"), t("goWeather.features.third")],
             technologies: ["Go"]
@@ -89,13 +89,13 @@ export default function ProjectsDetails() {
                                         }
                                     </div>
                                     <div className="flex items-center gap-8 pt-4">
-                                        <a href={project.codeLink} className="flex items-center gap-2 text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">
+                                        <a target="_blank" rel="noopener noreferrer" href={project.codeLink} className="flex items-center gap-2 text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">
                                             <CodeIcon strokeWidth={2} size={14}/>
                                             {t("helper.code")}
                                         </a>
                                         {
                                             project.demoLink &&
-                                            <a href={project.codeLink} className="flex items-center gap-2 text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">
+                                            <a target="_blank" rel="noopener noreferrer" href={project.demoLink} className="flex items-center gap-2 text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">
                                                 <SquareArrowOutUpRight  strokeWidth={2} size={14}/>
                                                 {t("helper.demo")}
                                             </a>

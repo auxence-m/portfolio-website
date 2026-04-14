@@ -48,7 +48,7 @@ export default function Footer() {
                             <span className="text-xs font-bold tracking-widest text-on-surface uppercase">{t("availability")}</span>
                         </div>
                     </div>
-                    {/* RIGHT HAND SIDE */}
+                    {/* EXPLORE SECTION */}
                     <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
                         <div className="flex flex-col gap-y-6">
                             <h4 className="text-sm font-bold tracking-widest text-primary uppercase">{t("explore.title")}</h4>
@@ -65,6 +65,7 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </div>
+                        {/* LOCATION SECTION */}
                         <div className="flex flex-col gap-y-6">
                             <h4 className="text-sm font-bold tracking-widest text-primary uppercase">{t("location.title")}</h4>
                             <p className="text-on-surface-variant text-sm font-medium">
