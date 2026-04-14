@@ -2,7 +2,10 @@
   "Navbar": {
     "projects": "Projets",
     "contact": "Contact",
-    "resume": "Voir mon C.V."
+    "resume": {
+      "title": "Voir mon C.V.",
+      "path": "/resume-french.pdf"
+    }
   },
 
   "NotFound": {
@@ -23,7 +26,10 @@
     "subtext": "Diplômé en génie informatique avec des solides bases en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
     "cta": {
       "projects": "Mes projets",
-      "resume": "Mon C.V."
+      "resume": {
+        "title": "Mon C.V.",
+        "path": "/resume-french.pdf"
+      }
     },
     "scroll": "Défiler"
   },
@@ -105,7 +111,7 @@
     "helper":  {
       "features": "Fonctionnalités",
       "code": "Code Source",
-      "demo": "Demo Live "
+      "demo": "Démo Live"
     },
     "ArboML": {
       "name": "ArboML",
@@ -200,7 +206,10 @@
       "title": "Explorer",
       "projects": "Projets",
       "contact": "Contact",
-      "resume": "C.V."
+      "resume": {
+        "title": "C.V.",
+        "path": "/resume-french.pdf"
+      }
     },
     "location": {
       "title": "Localisation",

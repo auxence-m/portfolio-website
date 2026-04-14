@@ -7,8 +7,6 @@ import {ArrowRight} from "lucide-react";
 export default function HomeHero() {
     const t = useTranslations("HomeHero");
 
-    // TODO: Resume link open in new tab
-
     return (
         <div id="home-hero" className="flex flex-1 flex-col pt-30 px-6 relative overflow-hidden bg-surface">
             <div className="absolute top-1/4 -right-20 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"/>
@@ -33,10 +31,10 @@ export default function HomeHero() {
                     <div className="flex flex-wrap items-center gap-6">
                         <Link href="/projects" className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 w-52 bg-primary text-on-primary font-bold text-sm tracking-widest uppercase rounded-sm hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 transition-all duration-300 active:translate-y-0">
                             <span className="relative z-10">{t("cta.projects")}</span>
-                            <ArrowRight strokeWidth={2} size={20} className="relative z-10 group-hover:translate-x-1 transition-transform duration-300"/>
+                            <ArrowRight strokeWidth={2} size={20} className="relative z-10 group-hover:translate-x-2 transition-transform duration-300"/>
                         </Link>
-                        <a className="inline-flex items-center justify-center gap-3 px-8 py-4 w-52 border border-outline-variant hover:border-primary hover:text-primary font-bold text-sm tracking-widest uppercase text-on-surface rounded-sm hover:-translate-y-0.5 transition-all duration-300 active:translate-y-0 cursor-pointer">
-                            {t("cta.resume")}
+                        <a target="_blank" rel="noopener noreferrer" href={t("cta.resume.path")} className="inline-flex items-center justify-center gap-3 px-8 py-4 w-52 border border-outline-variant hover:border-primary hover:text-primary font-bold text-sm tracking-widest uppercase text-on-surface rounded-sm hover:-translate-y-0.5 transition-all duration-300 active:translate-y-0 cursor-pointer">
+                            {t("cta.resume.title")}
                         </a>
                     </div>
                 </div>

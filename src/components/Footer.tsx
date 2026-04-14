@@ -19,7 +19,6 @@ export default function Footer() {
         }
     ]
 
-    // TODO: Resume link open in new tab
     function scrollToTop() {
         window.scrollTo({
             top: 0,
@@ -62,7 +61,7 @@ export default function Footer() {
                                     ))
                                 }
                                 <li>
-                                    <a href="#" className="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium">{t("explore.resume")}</a>
+                                    <a target="_blank" rel="noopener noreferrer" href={t("explore.resume.path")} className="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium">{t("explore.resume.title")}</a>
                                 </li>
                             </ul>
                         </div>

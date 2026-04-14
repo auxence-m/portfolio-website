@@ -26,16 +26,18 @@ export default async function ConfirmationPage() {
                     className="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant/20 mb-8">
                     <CheckCircleIcon size={28} strokeWidth={2} className="text-primary"/>
                 </div>
+                {/* TILE AND DESCRIPTION */}
                 <h1 className="text-6xl md:text-8xl font-bold tracking-tighter text-center text-on-surface uppercase mb-6">
                     {t("title")}
                 </h1>
                 <p className="max-w-md text-center mb-12 text-on-surface-variant text-lg leading-relaxed text-pretty">
                     {t("description")}
                 </p>
+                {/* CTA BUTTONS */}
                 <div className="flex flex-col lg:flex-row items-center justify-center gap-6">
                     <Link href="/" className="group relative inline-flex items-center justify-center gap-3 px-10 py-4 w-64 bg-primary text-on-primary font-bold uppercase rounded-sm hover:bg-primary/90 transition-all duration-300 active:scale-95">
                         <span className="relative z-10">{t("cta.home")}</span>
-                        <ArrowRight strokeWidth={2} size={20} className="relative z-10 group-hover:translate-x-1 transition-transform duration-300"/>
+                        <ArrowRight strokeWidth={2} size={20} className="relative z-10 group-hover:translate-x-2 transition-transform duration-300"/>
                     </Link>
                     <Link href="/projects" className="inline-flex items-center justify-center gap-3 px-10 py-4 w-64 border border-outline-variant/80 hover:border-primary/50 hover:text-primary font-bold uppercase text-on-surface rounded-sm transition-all duration-300 active:scale-95">
                         {t("cta.projects")}

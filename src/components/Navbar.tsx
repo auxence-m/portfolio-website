@@ -31,8 +31,6 @@ export default function Navbar() {
         }
     ]
 
-    // TODO: Resume link open in new tab
-
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 border-b border-outline-variant bg-surface/80 backdrop-blur-md transition-colors">
             {/* DESKTOP MENU */}
@@ -53,8 +51,8 @@ export default function Navbar() {
                             </Link>
                         ))
                     }
-                    <a href="#" className="px-5 py-2.5 bg-primary text-on-primary font-bold text-xs tracking-widest uppercase hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 rounded-sm">
-                        {t("resume")}
+                    <a target="_blank" rel="noopener noreferrer" href={t("resume.path")} className="px-5 py-2.5 bg-primary text-on-primary font-bold text-xs tracking-widest uppercase hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 rounded-sm">
+                        {t("resume.title")}
                     </a>
                     <div className="h-6 w-px bg-outline-variant"/>
                     {/* LANGUAGE AND THEME TOGGLE */}
@@ -103,8 +101,8 @@ export default function Navbar() {
                     {/* MOBILE MENU BOTTOM SECTION */}
                     <div className="mt-auto ml-2 flex flex-col gap-6">
                         <div className="py-6">
-                            <a href="#" className=" flex items-center justify-center p-5 bg-primary text-on-primary font-bold text-xs tracking-widest uppercase active:translate-y-0 transition-all rounded-sm">
-                                {t("resume")}
+                            <a target="_blank" rel="noopener noreferrer" href={t("resume.path")} className=" flex items-center justify-center p-5 bg-primary text-on-primary font-bold text-xs tracking-widest uppercase active:translate-y-0 transition-all rounded-sm">
+                                {t("resume.title")}
                             </a>
                         </div>
                         {/* LANGUAGE AND THEME TOGGLE */}
