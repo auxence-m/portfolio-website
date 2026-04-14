@@ -183,6 +183,16 @@
       }
     }
   },
+
+  "Confirmation": {
+    "title": "Merci.",
+    "description": "Votre message a été envoyé avec succès. Je vous répondrai dans les plus brefs délais.",
+    "cta": {
+      "home": "Return à Accueil",
+      "projects": "Voir projets recent"
+    }
+  },
+
   "Footer": {
     "subtext": "Diplômé en génie informatique avec une base en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
     "availability": "Disponible pour de nouveaux projets",

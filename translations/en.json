@@ -183,6 +183,16 @@
       }
     }
   },
+
+  "Confirmation": {
+    "title": "Thank you.",
+    "description": "Your message has been sent successfully. I’ll get back to you as soon as possible.",
+    "cta": {
+      "home": "Return to home",
+      "projects": "View recent work"
+    }
+  },
+
   "Footer": {
     "subtext": "Computer Engineering graduate with a foundation in software development, ready to grow and contribute to real-world projects",
     "availability": "Available for new projects",

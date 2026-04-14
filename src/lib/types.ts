@@ -1,6 +1,6 @@
 export type NavigationItem =  {
     name: string;
-    href: ("/" | "/projects" | "/contact");
+    href: ("/" | "/projects" | "/contact" | "/confirmation");
 }
 
 export type ProjectDetails = {
