@@ -145,6 +145,44 @@
     }
   },
 
+  "Contact": {
+    "status": "Status: Open to new opportunities",
+    "title": "Start a conversation",
+    "email": "Drop a line",
+    "location": {
+      "title": "Location",
+      "subtext": "Montreal, Quebec, Canada"
+    },
+    "socials": "Find me online",
+    "form": {
+      "send": "Send message",
+      "pending": "Sending message...",
+      "submissionHeader": "NEW FORM REQUEST",
+      "name": {
+        "title": "Name",
+        "placeholder": "John Doe"
+      },
+      "email": {
+        "title": "Email",
+        "placeholder": "john@example.com"
+      },
+      "subject": {
+        "title": "Subject",
+        "placeholder": "Message's subject"
+      },
+      "message": {
+        "title": "Message",
+        "placeholder": "Tell me more about the project..."
+      },
+      "validationErrors": {
+        "required": "This field is required",
+        "name": "Please enter a valide name (3 characters minimum)",
+        "email": "Please enter a valide email address (ex: john@example.com)",
+        "subject": "Please enter a valide subject (5 characters minimum)",
+        "message": "Please enter a valide message (15 characters minimum)"
+      }
+    }
+  },
   "Footer": {
     "subtext": "Computer Engineering graduate with a foundation in software development, ready to grow and contribute to real-world projects",
     "availability": "Available for new projects",
