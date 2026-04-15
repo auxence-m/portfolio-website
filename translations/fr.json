@@ -199,6 +199,10 @@
     }
   },
 
+  "ErrorBanner": {
+    "message": "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard s'il vous plaît."
+  },
+
   "Footer": {
     "subtext": "Diplômé en génie informatique avec une base en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
     "availability": "Disponible pour de nouveaux projets",

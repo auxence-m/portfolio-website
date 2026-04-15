@@ -4,6 +4,7 @@ import {useTranslations} from "next-intl";
 import {CircleAlert, LoaderCircle, MailIcon, MapPinIcon, MoveRight} from "lucide-react";
 import {Button, Field, Input, Label, Textarea} from "@headlessui/react";
 import {socialMedias} from "@/lib/utils";
+import ContactErrorBanner from "@/components/ContactErrorBanner";
 import Image from "next/image";
 import {FormState, submitForm} from "@/actions";
 import {useActionState} from "react";
@@ -153,7 +154,12 @@ export default function ContactForm() {
                                     ))
                                 }
                             </Field>
-                            <Button type="submit" disabled={pending} className="w-full text-sm px-16 py-6 bg-primary text-on-primary font-bold uppercase tracking-[0.2em] rounded-md transition-all duration-300 active:scale-95 hover:brightness-110 disabled:bg-primary/80 cursor-pointer group">
+                            {/* HONEY POT FIELD */}
+                            <Field className="flex flex-col gap-y-3 absolute left-2499.75">
+                                <Label htmlFor="company">Company</Label>
+                                <Input tabIndex={-1} autoComplete="off" id="company" name="company" className="w-full border border-outline-variant/30 rounded-xl px-7 py-5"/>
+                            </Field>
+                            <Button type="submit" disabled={pending} className="w-full text-sm px-16 py-6 bg-primary text-on-primary font-bold uppercase tracking-[0.2em] rounded-md shadow-md shadow-primary/30 transition-all duration-300 active:scale-95 hover:brightness-110 disabled:bg-primary/80 cursor-pointer group">
                                 {
                                     pending ?
                                         <div className="flex items-center justify-center gap-4">
@@ -167,6 +173,10 @@ export default function ContactForm() {
                                 }
                             </Button>
                         </form>
+                        {/* ERROR BANNER */}
+                        {
+                            state.message !== "" && <ContactErrorBanner key={state.submissionId}/>
+                        }
                     </div>
                 </div>
             </div>

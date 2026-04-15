@@ -199,6 +199,10 @@
     }
   },
 
+  "ErrorBanner": {
+    "message": "An error occurred while sending the message. Please try again later."
+  },
+
   "Footer": {
     "subtext": "Computer Engineering graduate with a foundation in software development, ready to grow and contribute to real-world projects",
     "availability": "Available for new projects",

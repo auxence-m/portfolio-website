@@ -19,6 +19,16 @@ export type FormState = {
 }
 
 export async function submitForm(prevState: FormState, formData: FormData):Promise<FormState> {
+    const honeypot = formData.get("company");
+
+    if (honeypot) {
+        // Bot detected — silently ignore
+        console.log("BOT DETECTED")
+        return {
+            message: ""
+        };
+    }
+
     const t = await getTranslations('Contact');
     const locale = await getLocale();
 
@@ -35,7 +45,7 @@ export async function submitForm(prevState: FormState, formData: FormData):Promi
             message: "",
             errors: z.flattenError(validatedFields.error).fieldErrors,
             data: formData,
-        }
+        };
     }
 
     try {
@@ -59,7 +69,7 @@ export async function submitForm(prevState: FormState, formData: FormData):Promi
                             "fields": [
                                 {
                                     "type": "mrkdwn",
-                                    "text": `*${t("form.name.title")}*\n${validatedFields.data.name}`
+                                    "text": `*${t("form.name.title")}*: ${validatedFields.data.name}`
                                 }
                             ]
                         },
@@ -68,7 +78,7 @@ export async function submitForm(prevState: FormState, formData: FormData):Promi
                             "fields": [
                                 {
                                     "type": "mrkdwn",
-                                    "text": `*${t("form.email.title")}*\n${validatedFields.data.email}`
+                                    "text": `*${t("form.email.title")}*: ${validatedFields.data.email}`
                                 }
                             ]
                         },
@@ -77,18 +87,16 @@ export async function submitForm(prevState: FormState, formData: FormData):Promi
                             "fields": [
                                 {
                                     "type": "mrkdwn",
-                                    "text": `*${t("form.subject.title")}*\n${validatedFields.data.subject}`
+                                    "text": `*${t("form.subject.title")}*: ${validatedFields.data.subject}`
                                 }
                             ]
                         },
                         {
                             "type": "section",
-                            "fields": [
-                                {
-                                    "type": "mrkdwn",
-                                    "text": `*${t("form.message.title")}*\n${validatedFields.data.message}`
-                                }
-                            ]
+                            "text": {
+                                "type": "mrkdwn",
+                                "text": `*${t("form.message.title")}*: ${validatedFields.data.message}`
+                            }
                         }
                     ]
                 }
@@ -108,7 +116,7 @@ export async function submitForm(prevState: FormState, formData: FormData):Promi
             message: "ERROR",
             data: formData,
             submissionId: Date.now()
-        }
+        };
     }
 
     // Redirect to confirmation page
