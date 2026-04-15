@@ -24,7 +24,7 @@ export default function HomeHero() {
                         <span className="text-primary">{t("headline.first")}</span>
                         <span> {t("headline.second")}</span>
                     </h1>
-                    <p className="text-xl/8 md:text-2xl/9 text-on-surface-variant md:text-justify max-w-2xl mb-10">
+                    <p className="text-xl/8 md:text-2xl/9 text-on-surface-variant max-w-2xl mb-10">
                         {t("subtext")}
                     </p>
                     {/* CTA BUTTONS */}

@@ -75,10 +75,10 @@ export default function Navbar() {
             <Dialog open={openMobileMenu} onClose={() => setOpenMobileMenu(false)} className="lg:hidden">
                 <DialogBackdrop transition className="fixed inset-0 bg-black/30 duration-500 ease-in-out data-closed:opacity-0"/>
                 <div className="fixed inset-0 z-50"/>
-                <DialogPanel transition className="flex flex-col fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-surface px-5 py-3.5 transform duration-500 ease-in-out data-closed:translate-x-full data-closed:opacity-100 sm:duration-700">
+                <DialogPanel transition className="flex flex-col fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-surface px-5 py-4 transform duration-500 ease-in-out data-closed:translate-x-full data-closed:opacity-100 sm:duration-700">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
-                            <Link href="/" onClick={() => setOpenMobileMenu(false)} className="mt-1.5 ml-1 w-10 h-10 bg-primary flex items-center justify-center rounded-sm transition-transform active:scale-95">
+                            <Link href="/" onClick={() => setOpenMobileMenu(false)} className="mt-1 ml-1 w-10 h-10 bg-primary flex items-center justify-center rounded-sm">
                                 <span className="text-on-primary font-bold text-xl leading-none">AM</span>
                             </Link>
                             <span className="font-bold tracking-tight text-lg text-on-surface">Auxence MEDJA</span>

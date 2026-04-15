@@ -26,7 +26,7 @@ export default function ProjectsCTA() {
                                 <p className="text-outline-variant uppercase tracking-[0.2em] text-xs">
                                     {t("message")}
                                 </p>
-                                <Link href="/contact" className="w-full flex justify-center bg-primary text-on-primary uppercase tracking-widest px-10 py-5 rounded-md hover:bg-primary/90 transition-all active:scale-95 shadow-md shadow-primary/20">
+                                <Link href="/contact" className="w-full flex justify-center bg-primary text-on-primary uppercase tracking-widest px-10 py-5 rounded-md hover:brightness-105 hover:shadow-[0_0_25px_rgba(76,214,255,0.4)] transition-all duration-300 active:scale-95 shadow-md shadow-primary/30">
                                     {t("cta")}
                                 </Link>
                             </div>
