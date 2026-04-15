@@ -155,7 +155,7 @@ export default function ContactForm() {
                                 }
                             </Field>
                             {/* HONEY POT FIELD */}
-                            <Field className="flex flex-col gap-y-3 absolute left-2499.75">
+                            <Field aria-hidden="true" className="flex flex-col gap-y-3 absolute translate-x-full opacity-0 pointer-events-none">
                                 <Label htmlFor="company">Company</Label>
                                 <Input tabIndex={-1} autoComplete="off" id="company" name="company" className="w-full border border-outline-variant/30 rounded-xl px-7 py-5"/>
                             </Field>
