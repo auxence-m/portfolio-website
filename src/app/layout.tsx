@@ -3,6 +3,7 @@ import {Space_Grotesk} from "next/font/google";
 import "./globals.css";
 import React from "react";
 import {NextThemeProvider} from "@/components/NextThemeProvider";
+import { Analytics } from '@vercel/analytics/next';
 
 const spaceGrotesk = Space_Grotesk({
     subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
         <body className={`${spaceGrotesk.className} min-h-screen flex flex-col bg-surface text-on-surface transition-colors duration-300 antialiased`}>
         <NextThemeProvider>
             {children}
+            <Analytics />
         </NextThemeProvider>
         </body>
         </html>
