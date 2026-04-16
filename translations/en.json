@@ -221,5 +221,42 @@
       "description": "Montreal, Quebec, Canada"
     },
     "copyright": "Auxence MEDJA, All rights reserved."
+  },
+
+  "Metadata": {
+    "layout": {
+      "title": {
+        "default": "Auxence MEDJA | Software Engineer",
+        "template": "%s | Auxence MEDJA"
+      },
+      "description": "Software Engineer, ready to grow and contribute to real-world projects",
+      "keywords": [
+        "Software engineer",
+        "Full Stack Developer",
+        "Next.js",
+        "React",
+        "Typescript",
+        "Go",
+        "Google Cloud",
+        "Firebase",
+        "Tailwind CSS"
+      ]
+    },
+    "home": {
+      "title": "Auxence MEDJA",
+      "description": "Software Engineer, ready to grow and contribute to real-world projects"
+    },
+    "projects" : {
+      "title": "Projects",
+      "description": "A selection projects reflecting my skills, interests, and approach to problem-solving."
+    },
+    "contact" : {
+      "title": "Contact",
+      "description": "Get in touch for projects, collaborations, or opportunities."
+    },
+    "confirmation": {
+      "title": "Confirmation",
+      "description": "Your message has been successfully sent."
+    }
   }
 }

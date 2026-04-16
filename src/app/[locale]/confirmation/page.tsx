@@ -3,6 +3,21 @@ import {Link} from "@/i18n/navigation";
 import {cookies} from "next/headers";
 import {getLocale, getTranslations} from "next-intl/server";
 import {redirect} from "@/i18n/navigation";
+import {Metadata} from "next";
+
+export async function generateMetadata({params}: {params: Promise<{locale: "en | fr"}>}):Promise<Metadata> {
+    const {locale} = await params;
+    const t = await getTranslations({locale, namespace: "Metadata.confirmation"});
+
+    return {
+        title: t("title"),
+        description: t("description"),
+        robots: {
+            index: false,
+            follow: true,
+        }
+    }
+}
 
 export default async function ConfirmationPage() {
     const locale = await getLocale();

@@ -220,5 +220,42 @@
       "description": "Montréal, Québec, Canada"
     },
     "copyright": "Auxence MEDJA, Tous droits réservés."
+  },
+
+  "Metadata": {
+    "layout": {
+      "title": {
+        "default": "Auxence MEDJA | Ingénieur Logiciel",
+        "template": "%s | Auxence MEDJA"
+      },
+      "description": "Ingénieur Logiciel, motivé à progresser et à contribuer à des projets concrets",
+      "keywords": [
+        "Ingénieur Logiciel",
+        "Développeur Full Stack",
+        "Next.js",
+        "React",
+        "Typescript",
+        "Go",
+        "Google Cloud",
+        "Firebase",
+        "Tailwind CSS"
+      ]
+    },
+    "home": {
+      "title": "Auxence MEDJA",
+      "description": "Ingénieur Logiciel, motivé à progresser et à contribuer à des projets concrets"
+    },
+    "projects" : {
+      "title": "Projets",
+      "description": "Une sélection de projets reflétant mes compétences, mes centres d’intérêt et ma façon d’aborder la résolution de problèmes."
+    },
+    "contact" : {
+      "title": "Contact",
+      "description": "Contactez-moi pour discuter de projets, collaborations ou opportunités."
+    },
+    "confirmation": {
+      "title": "Confirmation",
+      "description": "Votre message a bien été envoyé."
+    }
   }
 }
