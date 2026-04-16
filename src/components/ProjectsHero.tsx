@@ -36,7 +36,7 @@ export default function ProjectsHero() {
                     <div className="flex items-center gap-4 mb-4">
                         <span className="h-0.5 w-10 bg-primary"/>
                         <span className="text-primary font-bold tracking-[0.2em] text-xs uppercase">
-                            {t("helper")}
+                            {t("label")}
                         </span>
                     </div>
                     {/* TITLE AND SUBTEXT */}
@@ -48,7 +48,7 @@ export default function ProjectsHero() {
                         </div>
                         <div className="lg:col-span-4 flex mt-auto lg:mb-3.5">
                             <p className="text-xl text-on-surface-variant font-light lg:text-pretty">
-                                {t("subtext")}
+                                {t("description")}
                             </p>
                         </div>
                     </div>

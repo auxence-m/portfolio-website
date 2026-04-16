@@ -25,7 +25,7 @@ export default function HomeHero() {
                         <span> {t("headline.second")}</span>
                     </h1>
                     <p className="text-xl/8 md:text-2xl/9 text-on-surface-variant max-w-2xl mb-10">
-                        {t("subtext")}
+                        {t("description")}
                     </p>
                     {/* CTA BUTTONS */}
                     <div className="flex flex-wrap items-center gap-6">

@@ -18,12 +18,12 @@
   },
 
   "HomeHero": {
-    "role": "Développeur Logiciel Junior",
+    "role": "Ingénieur Logiciel Junior",
     "headline": {
       "first": "Apprendre et m'améliorer",
       "second": "un projet à la fois"
     },
-    "subtext": "Diplômé en génie informatique avec des solides bases en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
+    "description": "Diplômé en génie informatique avec des solides bases en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
     "cta": {
       "projects": "Mes projets",
       "resume": {
@@ -37,7 +37,7 @@
   "Summary": {
     "title": "Résumé professionnel",
     "headline": "Enthousiaste du développement d’applications web et cloud-native",
-    "subtext": "Je suis diplômé en génie informatique avec une expérience pratique en développement full-stack, applications cloud-native et support technique. J’ai travaillé avec Golang, React et Google Cloud, et j’ai une bonne compréhension des pratiques Agile, du CI/CD ainsi que de la conception logicielle. Je me concentre actuellement sur le l'amélioration de mes compétences en développement web et en applications cloud-native. Je suis activement à la recherche de postes de développeur logiciel junior où je pourrais contribuer, apprendre et continuer à évoluer en tant que développeur."
+    "description": "Je suis diplômé en génie informatique avec une expérience pratique en développement full-stack, applications cloud-native et support technique. J’ai travaillé avec Golang, React et Google Cloud, et j’ai une bonne compréhension des pratiques Agile, du CI/CD ainsi que de la conception logicielle. Je me concentre actuellement sur le l'amélioration de mes compétences en développement web et en applications cloud-native. Je suis activement à la recherche de postes de développeur logiciel junior où je pourrais contribuer, apprendre et continuer à évoluer en tant que développeur."
   },
 
   "Education": {
@@ -98,13 +98,13 @@
     "title": "Collaborons ensemble",
     "message": "Envoyer un message",
     "connect": "Connectez avec moi",
-    "cta": "Démarrer une discussion"
+    "action": "Démarrer une discussion"
   },
 
   "ProjectsHero": {
+    "label": "Mes travaux",
     "title": "Projets Phares",
-    "helper": "Mes travaux",
-    "subtext": "Quelques projets sélectionnés parmi de nombreux travaux, reflétant mes compétences, mes centres d’intérêt et ma façon d’aborder la résolution de problèmes."
+    "description": "Quelques projets sélectionnés parmi de nombreux travaux, reflétant mes compétences, mes centres d’intérêt et ma façon d’aborder la résolution de problèmes."
   },
 
   "ProjectsList": {
@@ -157,7 +157,7 @@
     "email": "Envoyez un message",
     "location": {
       "title": "Localisation",
-      "subtext": "Montréal, Québec, Canada"
+      "description": "Montréal, Québec, Canada"
     },
     "socials": "Retrouvez-moi en ligne",
     "form": {
@@ -204,7 +204,7 @@
   },
 
   "Footer": {
-    "subtext": "Diplômé en génie informatique avec une base en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
+    "description": "Diplômé en génie informatique avec une base en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
     "availability": "Disponible pour de nouveaux projets",
     "explore": {
       "title": "Explorer",
@@ -217,7 +217,7 @@
     },
     "location": {
       "title": "Localisation",
-      "subtext": "Montréal, Québec, Canada"
+      "description": "Montréal, Québec, Canada"
     },
     "copyright": "Auxence MEDJA, Tous droits réservés."
   }

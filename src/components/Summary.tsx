@@ -19,7 +19,7 @@ export default function Summary() {
                     </div>
                     <div className="lg:col-span-8 flex flex-col gap-8">
                         <p className="text-lg md:text-xl leading-relaxed text-on-surface font-light text-pretty">
-                            {t("subtext")}
+                            {t("description")}
                         </p>
                     </div>
                 </div>

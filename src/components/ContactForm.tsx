@@ -48,7 +48,7 @@ export default function ContactForm() {
                                 <div className="group flex items-center gap-4">
                                     <MapPinIcon size={25} strokeWidth={2} className="text-primary group-hover:scale-105 transition-transform duration-500"/>
                                     <p className="text-xl text-on-surface group-hover:text-primary transition-colors duration-500">
-                                        {t("location.subtext")}
+                                        {t("location.description")}
                                     </p>
                                 </div>
                             </div>

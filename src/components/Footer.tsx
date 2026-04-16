@@ -40,7 +40,7 @@ export default function Footer() {
                                 <span className="font-bold tracking-tight text-xl text-on-surface-light">Auxence MEDJA</span>
                             </div>
                             <p className="text-on-surface-variant text-base/7">
-                                {t("subtext")}
+                                {t("description")}
                             </p>
                         </div>
                         <div className="flex items-center gap-3">
@@ -69,7 +69,7 @@ export default function Footer() {
                         <div className="flex flex-col gap-y-6">
                             <h4 className="text-sm font-bold tracking-widest text-primary uppercase">{t("location.title")}</h4>
                             <p className="text-on-surface-variant text-sm font-medium">
-                                {t("location.subtext")}
+                                {t("location.description")}
                             </p>
                         </div>
                     </div>
