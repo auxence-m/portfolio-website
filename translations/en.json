@@ -153,7 +153,8 @@
 
   "Contact": {
     "status": "Status: Open to new opportunities",
-    "title": "Start a conversation",
+    "title": "Get in touch.",
+    "description": "Feel free to reach out to discuss new projects, collaborations, and opportunities.",
     "email": "Drop a line",
     "location": {
       "title": "Location",

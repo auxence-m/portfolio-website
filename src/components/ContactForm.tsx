@@ -34,8 +34,8 @@ export default function ContactForm() {
                                     {t("email")}
                                 </p>
                                 <div className="group flex items-center gap-4">
-                                    <MailIcon size={25} strokeWidth={2} className="text-primary group-hover:scale-105 transition-transform duration-500"/>
-                                    <a href="mailto:auxencemedja@gmail.com" className="relative text-xl text-on-surface group-hover:text-primary transition-colors duration-500">
+                                    <MailIcon size={25} strokeWidth={2} className="text-primary group-hover:scale-105 transition-transform duration-500 shrink-0"/>
+                                    <a href="mailto:auxencemedja@gmail.com" className="relative text-[1.1rem] md:text-xl text-on-surface group-hover:text-primary transition-colors duration-500 break-all">
                                         auxencemedja@gmail.com
                                         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-500 group-hover:w-full"/>
                                     </a>
@@ -46,8 +46,8 @@ export default function ContactForm() {
                                     {t("location.title")}
                                 </p>
                                 <div className="group flex items-center gap-4">
-                                    <MapPinIcon size={25} strokeWidth={2} className="text-primary group-hover:scale-105 transition-transform duration-500"/>
-                                    <p className="text-xl text-on-surface group-hover:text-primary transition-colors duration-500">
+                                    <MapPinIcon size={25} strokeWidth={2} className="text-primary group-hover:scale-105 transition-transform duration-500 shrink-0"/>
+                                    <p className="relative text-[1.1rem] md:text-xl text-on-surface group-hover:text-primary transition-colors duration-500">
                                         {t("location.description")}
                                     </p>
                                 </div>
@@ -62,7 +62,7 @@ export default function ContactForm() {
                                         socialMedias.map((social) => (
                                             <div key={social.name} className="group flex items-center gap-4">
                                                 <Image alt={social.alt} src={social.logo} width={128} height={128} className="size-6 group-hover:scale-105 transition-transform duration-500"/>
-                                                <a target="_blank" rel="noopener noreferrer" href={social.href} className="relative text-xl text-on-surface group-hover:text-primary transition-colors duration-500">
+                                                <a target="_blank" rel="noopener noreferrer" href={social.href} className="relative text-[1.1rem] md:text-xl text-on-surface group-hover:text-primary transition-colors duration-500">
                                                     {social.name} - {social.alias}
                                                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-500 group-hover:w-full"/>
                                                 </a>
@@ -155,9 +155,9 @@ export default function ContactForm() {
                                 }
                             </Field>
                             {/* HONEY POT FIELD */}
-                            <Field aria-hidden="true" className="flex flex-col gap-y-3 absolute translate-x-full opacity-0 pointer-events-none">
+                            <Field aria-hidden="true" className="flex flex-col gap-y-3 absolute -translate-x-full opacity-0 pointer-events-none">
                                 <Label htmlFor="company">Company</Label>
-                                <Input tabIndex={-1} autoComplete="off" id="company" name="company" className="w-full border border-outline-variant/30 rounded-xl px-7 py-5"/>
+                                <Input tabIndex={-1} autoComplete="off" id="company" name="company" className="-mt-2 w-full border border-outline-variant/30 rounded-xl px-7 py-5"/>
                             </Field>
                             <Button type="submit" disabled={pending} className="w-full text-sm px-16 py-6 bg-primary text-on-primary font-bold uppercase tracking-[0.2em] rounded-md shadow-md shadow-primary/30 transition-all duration-300 active:scale-95 hover:brightness-110 disabled:bg-primary/80 cursor-pointer group">
                                 {

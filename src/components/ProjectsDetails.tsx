@@ -58,7 +58,7 @@ export default function ProjectsDetails() {
                                     <h2 className="text-4xl md:text-5xl font-bold tracking-tighter group-hover:text-primary transition-colors duration-300 mb-4">
                                         {project.name}
                                     </h2>
-                                    <p className="text-on-surface-variant text-lg leading-relaxed text-pretty">
+                                    <p className="text-on-surface-variant text-lg leading-relaxed lg:text-pretty">
                                         {project.description}
                                     </p>
                                 </div>
