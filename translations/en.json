@@ -18,7 +18,7 @@
   },
 
   "HomeHero": {
-    "role": "Junior Software Engineer",
+    "role": "Software Engineer",
     "headline": {
       "first": "Learning and Improving",
       "second": "one project at a time"
@@ -37,7 +37,7 @@
   "Summary": {
     "title": "Professional Summary",
     "headline": "Exploring web and cloud-native applications development.",
-    "description": "I'm a Computer Engineering graduate with hands-on experience in full-stack development, cloud-native applications, and technical support. I've worked with Golang, React, and Google Cloud, and have solid understanding of Agile practices, CI/CD, and software design. I'm currently focused on improving my skills in web development and cloud-native applications development. I'm actively seeking for entry-level or junior software development roles where I can contribute, learn, and continue to grow as a developer."
+    "description": "I'm a Computer Engineering graduate with hands-on experience in full-stack development, cloud-native applications, and technical support. I've worked with Golang, React, and Google Cloud, and have solid understanding of Agile practices, CI/CD, and software design. I'm currently focused on improving my skills in web development and cloud-native applications development. I'm actively seeking for entry-level software developer roles where I can contribute, learn, and continue to grow as a developer."
   },
 
   "Education": {

@@ -18,7 +18,7 @@
   },
 
   "HomeHero": {
-    "role": "Ingénieur Logiciel Junior",
+    "role": "Ingénieur Logiciel",
     "headline": {
       "first": "Apprendre et m'améliorer",
       "second": "un projet à la fois"
@@ -37,7 +37,7 @@
   "Summary": {
     "title": "Résumé professionnel",
     "headline": "Enthousiaste du développement d’applications web et cloud-native",
-    "description": "Je suis diplômé en génie informatique avec une expérience pratique en développement full-stack, applications cloud-native et support technique. J’ai travaillé avec Golang, React et Google Cloud, et j’ai une bonne compréhension des pratiques Agile, du CI/CD ainsi que de la conception logicielle. Je me concentre actuellement sur le l'amélioration de mes compétences en développement web et en applications cloud-native. Je suis activement à la recherche de postes de développeur logiciel junior où je pourrais contribuer, apprendre et continuer à évoluer en tant que développeur."
+    "description": "Je suis diplômé en génie informatique avec une expérience pratique en développement full-stack, applications cloud-native et support technique. J’ai travaillé avec Golang, React et Google Cloud, et j’ai une bonne compréhension des pratiques Agile, du CI/CD ainsi que de la conception logicielle. Je me concentre actuellement sur l'amélioration de mes compétences en développement web et en applications cloud-native. Je suis activement à la recherche de postes de développeur logiciel où je pourrais contribuer, apprendre et continuer à évoluer en tant que développeur."
   },
 
   "Education": {
