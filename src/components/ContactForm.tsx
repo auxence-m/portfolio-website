@@ -24,17 +24,19 @@ export default function ContactForm() {
     return (
         <section id="contact-form" className="pb-30 px-6 bg-surface-dim">
             <div className="max-w-7xl w-full mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 overflow-hidden rounded-2xl border border-outline-variant/50">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 overflow-hidden">
                     {/* LEFT: DIRECT CONTACT INFO */}
-                    <div className="lg:col-span-5 bg-surface-container/80 p-8 lg:p-16 border-b lg:border-b-0 lg:border-r border-outline-variant/20">
+                    <div className="lg:col-span-5 p-4 lg:p-8 lg:order-2">
                         <div className="flex flex-col gap-y-16">
                             {/* MAIL AND LOCATION */}
                             <div className="flex flex-col gap-y-6">
-                                <p className="text-on-surface-variant uppercase tracking-widest text-xs">
+                                <p className="text-on-surface-variant font-bold uppercase tracking-widest text-xs">
                                     {t("email")}
                                 </p>
                                 <div className="group flex items-center gap-4">
-                                    <MailIcon size={25} strokeWidth={2} className="text-primary group-hover:scale-105 transition-transform duration-500 shrink-0"/>
+                                    <div className="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center group-hover:bg-primary transition-colors shrink-0">
+                                        <MailIcon size={22} strokeWidth={2} className="text-on-surface group-hover:text-on-primary transition-colors"/>
+                                    </div>
                                     <a href="mailto:auxencemedja@gmail.com" className="relative text-[1.1rem] md:text-xl text-on-surface group-hover:text-primary transition-colors duration-500 break-all">
                                         auxencemedja@gmail.com
                                         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-500 group-hover:w-full"/>
@@ -42,11 +44,13 @@ export default function ContactForm() {
                                 </div>
                             </div>
                             <div className="flex flex-col gap-y-6">
-                                <p className="text-on-surface-variant uppercase tracking-widest text-xs">
+                                <p className="text-on-surface-variant font-bold uppercase tracking-widest text-xs">
                                     {t("location.title")}
                                 </p>
                                 <div className="group flex items-center gap-4">
-                                    <MapPinIcon size={25} strokeWidth={2} className="text-primary group-hover:scale-105 transition-transform duration-500 shrink-0"/>
+                                    <div className="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center group-hover:bg-primary transition-colors shrink-0">
+                                        <MapPinIcon size={22} strokeWidth={2} className="text-on-surface group-hover:text-on-primary transition-colors"/>
+                                    </div>
                                     <p className="relative text-[1.1rem] md:text-xl text-on-surface group-hover:text-primary transition-colors duration-500">
                                         {t("location.description")}
                                     </p>
@@ -54,14 +58,16 @@ export default function ContactForm() {
                             </div>
                             {/* SOCIAL MEDIA LINKS */}
                             <div className="pt-8 border-t border-outline-variant/20">
-                                <p className="text-on-surface-variant uppercase tracking-widest mb-8 text-xs">
+                                <p className="text-on-surface-variant font-bold uppercase tracking-widest mb-8 text-xs">
                                     {t("socials")}
                                 </p>
                                 <div className="flex flex-col gap-y-8">
                                     {
                                         socialMedias.map((social) => (
                                             <div key={social.name} className="group flex items-center gap-4">
-                                                <Image alt={social.alt} src={social.logo} width={128} height={128} className="size-6 group-hover:scale-105 transition-transform duration-500"/>
+                                                <div className="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center group-hover:bg-primary transition-colors shrink-0">
+                                                    <Image alt={social.alt} src={social.logo} width={128} height={128} className="size-6 text-on-surface group-hover:text-on-primary transition-colors"/>
+                                                </div>
                                                 <a target="_blank" rel="noopener noreferrer" href={social.href} className="relative text-[1.1rem] md:text-xl text-on-surface group-hover:text-primary transition-colors duration-500">
                                                     {social.name} - {social.alias}
                                                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-500 group-hover:w-full"/>
@@ -73,8 +79,8 @@ export default function ContactForm() {
                             </div>
                         </div>
                     </div>
-                    {/* RIGHT: CONTACT FORM */}
-                    <div className="lg:col-span-7 bg-surface-container-low/80 p-8 lg:p-16">
+                    {/* CONTACT FORM */}
+                    <div className="lg:col-span-7 bg-surface-container-low p-8 lg:p-16 rounded-2xl">
                         <form action={submitAction} className="flex flex-col gap-y-10">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <Field className="flex flex-col gap-y-3">
