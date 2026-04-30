@@ -23,7 +23,7 @@
       "first": "Learning and Improving",
       "second": "one project at a time"
     },
-    "description": "Computer Engineering graduate with a solid foundation in software development, ready to grow and contribute to real-world projects",
+    "description": "Computer Engineering graduate with a solid foundation in software development, ready to grow and contribute to real-world projects.",
     "cta": {
       "projects": "My projects",
       "resume": {
@@ -205,7 +205,7 @@
   },
 
   "Footer": {
-    "description": "Computer Engineering graduate with a foundation in software development, ready to grow and contribute to real-world projects",
+    "description": "Computer Engineering graduate with a foundation in software development, ready to grow and contribute to real-world projects.",
     "availability": "Available for new projects",
     "explore": {
       "title": "Explore",
@@ -230,7 +230,7 @@
         "default": "Auxence MEDJA | Software Engineer",
         "template": "%s | Auxence MEDJA"
       },
-      "description": "Software Engineer, ready to grow and contribute to real-world projects",
+      "description": "Software Engineer, ready to grow and contribute to real-world projects.",
       "keywords": [
         "Software engineer",
         "Full Stack Developer",
@@ -245,7 +245,7 @@
     },
     "home": {
       "title": "Auxence MEDJA",
-      "description": "Software Engineer, ready to grow and contribute to real-world projects"
+      "description": "Software Engineer, ready to grow and contribute to real-world projects."
     },
     "projects" : {
       "title": "Projects",

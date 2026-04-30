@@ -23,7 +23,7 @@
       "first": "Apprendre et m'améliorer",
       "second": "un projet à la fois"
     },
-    "description": "Diplômé en génie informatique avec des solides bases en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
+    "description": "Diplômé en génie informatique avec des solides bases en développement logiciel, motivé à progresser et à contribuer à des projets concrets.",
     "cta": {
       "projects": "Mes projets",
       "resume": {
@@ -154,7 +154,7 @@
   "Contact": {
     "status": "Statut: Disponible pour de nouvelles opportunités",
     "title": "Entrer en contact.",
-    "description": "N’hésitez pas à me contacter pour discuter d’un projet, d’une collaboration ou d’une opportunité",
+    "description": "N’hésitez pas à me contacter pour discuter d’un projet, d’une collaboration ou d’une opportunité.",
     "email": "Envoyez un message",
     "location": {
       "title": "Localisation",
@@ -205,7 +205,7 @@
   },
 
   "Footer": {
-    "description": "Diplômé en génie informatique avec une base en développement logiciel, motivé à progresser et à contribuer à des projets concrets",
+    "description": "Diplômé en génie informatique avec une base en développement logiciel, motivé à progresser et à contribuer à des projets concrets.",
     "availability": "Disponible pour de nouveaux projets",
     "explore": {
       "title": "Explorer",
@@ -229,7 +229,7 @@
         "default": "Auxence MEDJA | Ingénieur Logiciel",
         "template": "%s | Auxence MEDJA"
       },
-      "description": "Ingénieur Logiciel, motivé à progresser et à contribuer à des projets concrets",
+      "description": "Ingénieur Logiciel, motivé à progresser et à contribuer à des projets concrets.",
       "keywords": [
         "Ingénieur Logiciel",
         "Développeur Full Stack",
@@ -244,7 +244,7 @@
     },
     "home": {
       "title": "Auxence MEDJA",
-      "description": "Ingénieur Logiciel, motivé à progresser et à contribuer à des projets concrets"
+      "description": "Ingénieur Logiciel, motivé à progresser et à contribuer à des projets concrets."
     },
     "projects" : {
       "title": "Projets",
