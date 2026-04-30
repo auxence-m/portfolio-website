@@ -11,7 +11,7 @@ export function generateStaticParams() {
     return routing.locales.map((locale) => ({locale}));
 }
 
-export async function generateMetadata({params}: {params: Promise<{locale: "en | fr"}>}):Promise<Metadata> {
+export async function generateMetadata({params}: {params: Promise<{locale: "en" | "fr"}>}):Promise<Metadata> {
     const {locale} = await params;
     const t = await getTranslations({locale, namespace: "Metadata.layout"});
 
@@ -30,7 +30,6 @@ export async function generateMetadata({params}: {params: Promise<{locale: "en |
             type: "website",
         },
         alternates: {
-            canonical: `https://www.auxmedja.com/${locale}`,
             languages: {
                 en: "https://www.auxmedja.com/en",
                 fr: "https://www.auxmedja.com/fr",

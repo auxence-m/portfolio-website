@@ -5,7 +5,7 @@ import {getLocale, getTranslations} from "next-intl/server";
 import {redirect} from "@/i18n/navigation";
 import {Metadata} from "next";
 
-export async function generateMetadata({params}: {params: Promise<{locale: "en | fr"}>}):Promise<Metadata> {
+export async function generateMetadata({params}: {params: Promise<{locale: "en" | "fr"}>}):Promise<Metadata> {
     const {locale} = await params;
     const t = await getTranslations({locale, namespace: "Metadata.confirmation"});
 
